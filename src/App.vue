@@ -2,7 +2,9 @@
   <MenuBar />
 
   <router-view v-slot="{ Component }">
-    <component :is="Component" />
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
   </router-view>
 
   <Footer />
@@ -38,5 +40,14 @@ html {
   text-align: center;
   color: #fff;
   margin: 60px 0px 10px 0px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s ease-out;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
