@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  background-color: #333333;
+  color: #cccccc;
+  font-weight: 500;
+  text-decoration: none;
+
+  outline: 0;
+  padding: 8px 18px;
+  border: 0;
+  border-radius: 0.5em;
+  margin: 0;
+
+  transition: background-color 0.25s;
+}
+.button:hover {
+  background-color: #444444;
+}
+.button:focus {
+  background-color: #444444;
+}
+
+.greenGradient {
+  background: rgb(156, 180, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(156, 180, 255, 1) 0%,
+    rgba(178, 214, 214, 1) 35%,
+    rgba(204, 255, 160, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(0, 0%, 80%);
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 46px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 76px;
+  }
+}
