@@ -1,7 +1,10 @@
 <template>
   <MenuBar />
-  <Introduction />
-  <Features />
+
+  <router-view v-slot="{ Component }">
+    <component :is="Component" />
+  </router-view>
+
   <Footer />
 </template>
 
@@ -18,6 +21,9 @@ export default defineComponent({
     Introduction,
     Features,
     Footer,
+  },
+  mounted() {
+    this.$router.push("/home");
   },
 });
 </script>

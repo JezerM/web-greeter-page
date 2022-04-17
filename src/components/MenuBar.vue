@@ -1,11 +1,11 @@
 <template>
   <div id="menuBar">
-    <div id="titleWrapper">
+    <div id="titleWrapper" @click="$router.push('/home')">
       <h3>{{ title }}</h3>
     </div>
     <div id="menuBarLinks">
-      <a href="">Themes</a>
-      <a href="">Docs</a>
+      <router-link to="/themes">Themes</router-link>
+      <a href="https://jezerm.github.io/web-greeter/">Docs</a>
     </div>
   </div>
 </template>
