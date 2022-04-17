@@ -3,7 +3,7 @@
     <header id="card-header" class="px-8 pt-8 text-left">
       <slot name="header"></slot>
     </header>
-    <header id="card-content" class="px-8 pb-8">
+    <header id="card-content">
       <slot></slot>
     </header>
   </div>
@@ -22,9 +22,17 @@ export default defineComponent({
 
 <style scoped>
 .card {
-  background-color: #333333;
+  display: flex;
   position: relative;
+
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+
+  background-color: #333333;
   border-radius: 25px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 </style>
 <style>
