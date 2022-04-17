@@ -1,6 +1,8 @@
 <template>
-  <Introduction />
-  <Features />
+  <section id="homeView">
+    <Introduction />
+    <Features />
+  </section>
 </template>
 
 <script lang="ts">
