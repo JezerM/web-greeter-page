@@ -1,8 +1,8 @@
 <template>
   <div id="menuBar">
-    <div id="titleWrapper" @click="$router.push('/home')">
+    <router-link id="titleWrapper" to="/home">
       <h3>{{ title }}</h3>
-    </div>
+    </router-link>
     <div id="menuBarLinks">
       <router-link to="/themes">Themes</router-link>
       <a href="https://jezerm.github.io/web-greeter/">Docs</a>
@@ -39,7 +39,11 @@ export default defineComponent({
       const h3: HTMLHeadingElement =
         this.$el.querySelector("#titleWrapper > h3");
 
-      if (event.animationName != "leaveTyping") return;
+      if (
+        event.animationName != "leaveTyping" &&
+        event.animationName != "noAnimation"
+      )
+        return;
 
       h3.classList.remove("leaveTyping");
       h3.classList.add("enterTyping");
@@ -88,6 +92,10 @@ export default defineComponent({
   margin: 10px 0px;
   overflow: hidden;
   white-space: nowrap;
+  transition: 0.25s;
+}
+#menuBar h3:hover {
+  color: #8cbce5;
 }
 #menuBar #titleWrapper {
   width: fit-content;
@@ -144,6 +152,25 @@ export default defineComponent({
 @media screen and (min-width: 600px) {
   #menuBar {
     padding: 0px 10%;
+  }
+}
+
+@media screen and (prefers-reduced-motion) {
+  @keyframes enterTyping {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  @keyframes leaveTyping {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+    }
   }
 }
 </style>
