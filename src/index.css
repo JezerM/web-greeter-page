@@ -18,9 +18,11 @@
 }
 .button:hover {
   background-color: #444444;
+  color: #8cbce5;
 }
 .button:focus {
   background-color: #444444;
+  color: #8cbce5;
 }
 
 .greenGradient {
