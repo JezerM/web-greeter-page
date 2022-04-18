@@ -2,18 +2,95 @@
   "default": [
     {
       "name": "Gruvbox",
+      "author": "JezerM (Jezer Mejía)",
       "repo": "https://github.com/JezerM/web-greeter/tree/master/themes/gruvbox",
       "description": "Simple theme with gruvbox color scheme. Based on glorious-theme by manilarome.",
+      "multiMonitor": true,
       "imagePrimary": "images/gruvbox-screenshot.png",
       "imageSecondary": "images/gruvbox-screenshot-second.png"
     },
     {
       "name": "Dracula",
+      "author": "JezerM (Jezer Mejía)",
       "repo": "https://github.com/JezerM/web-greeter/tree/master/themes/dracula",
       "description": "Simple theme with dracula color scheme. Based on glorious-theme by manilarome.",
+      "multiMonitor": true,
       "imagePrimary": "images/dracula-screenshot.png",
       "imageSecondary": "images/dracula-screenshot-second.png"
     }
   ],
-  "community": []
+  "community": [
+    {
+      "name": "Glorious",
+      "author": "manilarome (Gerome Matilla)",
+      "repo": "https://github.com/manilarome/lightdm-webkit2-theme-glorious",
+      "description": "A sleek, modern and glorified LightDM webkit2 theme",
+      "multiMonitor": false,
+      "imagePrimary": "https://github.com/manilarome/lightdm-webkit2-theme-glorious/raw/master/glorious.gif",
+      "imageSecondary": ""
+    },
+    {
+      "name": "Litarvan",
+      "author": "Litarvan (Adrien Navratil)",
+      "repo": "https://github.com/Litarvan/lightdm-webkit-theme-litarvan",
+      "description": "Litarvan's LightDM HTML theme.",
+      "multiMonitor": false,
+      "imagePrimary": "https://camo.githubusercontent.com/22468304adc58b48a69fcd4be49dd40fbbaac73c17bdf774e9dc6c3ab892e5b0/68747470733a2f2f6c6974617276616e2e6769746875622e696f2f6c69676874646d2d7765626b69742d7468656d652d6c6974617276616e2f73706c6173685f766965772e706e67",
+      "imageSecondary": ""
+    },
+    {
+      "name": "WelcomeXP",
+      "author": "mshernandez5 (Markus Hernandez)",
+      "repo": "https://github.com/mshernandez5/WelcomeXP",
+      "description": " A nody-greeter / web-greeter 3.0 theme to mimic the Windows XP login screen.",
+      "multiMonitor": true,
+      "imagePrimary": "https://github.com/mshernandez5/WelcomeXP/raw/master/screenshot/login.png",
+      "imageSecondary": "https://github.com/mshernandez5/WelcomeXP/raw/master/screenshot/shutdown_options.png"
+    },
+    {
+      "name": "Void theme",
+      "author": "JezerM (Jezer Mejía)",
+      "repo": "https://github.com/JezerM/lightdm-void-theme",
+      "description": "LightDM theme inspired in Void Linux (without any reason). Also, based on Litarvan's theme.",
+      "multiMonitor": true,
+      "imagePrimary": "https://github.com/JezerM/lightdm-void-theme/raw/master/misc/theme-show-1.png",
+      "imageSecondary": ""
+    },
+    {
+      "name": "Luminosity",
+      "author": "rda0 (Sven Mäder)",
+      "repo": "https://github.com/rda0/web-greeter-theme-luminosity",
+      "description": "Customizable LightDM Web Greeter theme based on the design of luminos by (Muhammad Sayuti) which was based on the official LightDM Webkit Greeter theme of Antergos Linux.",
+      "multiMonitor": false,
+      "imagePrimary": "https://github.com/rda0/web-greeter-theme-luminosity/raw/master/img/Screenshot1.jpg",
+      "imageSecondary": ""
+    },
+    {
+      "name": "Gab Gradient",
+      "author": "GabrielTenma (Gab!)",
+      "repo": "https://github.com/GabrielTenma/lightdm-gab-gradient",
+      "description": "LightDM-webkit Theme with modern style! :D ~ ",
+      "multiMonitor": false,
+      "imagePrimary": "https://raw.githubusercontent.com/GabrielTenma/lightdm-gab-gradient/master/.skrinsutan/Screen%20Shot%202021-08-24%20at%2010.28.50%20PM%20%E3%82%AC%E3%83%B4.png",
+      "imageSecondary": ""
+    },
+    {
+      "name": "Arch theme",
+      "author": "Kenogo (Keno Goertz) && guillaumeboehm (Guillaume BOEHM)",
+      "repo": "https://github.com/guillaumeboehm/lightdm-web-greeter-theme-arch",
+      "description": "Minimal theme for lightdm's web-greeter using humorous wallpapers about Arch Linux. Adapted to web-greeter by guillaumeboehm.",
+      "multiMonitor": false,
+      "imagePrimary": "https://raw.githubusercontent.com/guillaumeboehm/lightdm-web-greeter-theme-arch/master/example.png",
+      "imageSecondary": ""
+    },
+    {
+      "name": "Aether",
+      "author": "NoiSek (Noi Sek) && JezerM (Jezer Mejía)",
+      "repo": "https://github.com/JezerM/Aether",
+      "description": "A sleek ArchLinux login manager for lightdm-webkit. Adapted to web-greeter/nody-greeter by JezerM.",
+      "multiMonitor": false,
+      "imagePrimary": "https://github.com/JezerM/Aether/raw/screenshots/screenshot.png",
+      "imageSecondary": ""
+    }
+  ]
 }
