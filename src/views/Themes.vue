@@ -9,7 +9,7 @@
       <h2 class="mt-12 mb-6">Default themes</h2>
       <CardContainer>
         <Card
-          class="col-span-12 md:col-span-6"
+          class="col-span-12 md:col-span-6 2xl:col-span-3"
           v-for="theme in Themes.default"
           :key="theme.name"
         >
@@ -56,7 +56,7 @@
 
       <CardContainer>
         <Card
-          class="col-span-12 md:col-span-6"
+          class="col-span-12 md:col-span-6 2xl:col-span-3"
           v-for="theme in Themes.community"
           :key="theme.name"
         >
