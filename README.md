@@ -25,6 +25,7 @@ See [CONTRIBUTING](./CONTRIBUTING.md).
 - [Void theme](https://github.com/JezerM/lightdm-void-theme)
 - [Luminosity](https://github.com/rda0/web-greeter-theme-luminosity)
 - [Gab Gradient](https://github.com/GabrielTenma/lightdm-gab-gradient)
+- [Frost](https://gitlab.com/ihciM/lightdm-frost)
 - [Arch theme](https://github.com/guillaumeboehm/lightdm-web-greeter-theme-arch)
 - [Aether](https://github.com/JezerM/Aether)
 

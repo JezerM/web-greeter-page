@@ -75,6 +75,15 @@
       "imageSecondary": ""
     },
     {
+      "name": "Frost",
+      "author": "ihciM (Michael Gail)",
+      "repo": "https://gitlab.com/ihciM/lightdm-frost",
+      "description": "Frost LightDM theme made for nody-greeter.",
+      "multiMonitor": false,
+      "imagePrimary": "https://gitlab.com/ihciM/lightdm-frost/-/raw/main/readme/preview_1.jpg",
+      "imageSecondary": ""
+    },
+    {
       "name": "Arch theme",
       "author": "Kenogo (Keno Goertz) && guillaumeboehm (Guillaume BOEHM)",
       "repo": "https://github.com/guillaumeboehm/lightdm-web-greeter-theme-arch",

@@ -21,8 +21,8 @@
             <a
               class="button buttonRepo"
               :href="theme.repo"
-              title="Visit theme's GitHub repo"
-              >GitHub</a
+              title="Visit theme's repository"
+              >{{ getRepoHost(theme.repo) }}</a
             >
           </template>
 
@@ -68,8 +68,8 @@
             <a
               class="button buttonRepo"
               :href="theme.repo"
-              title="Visit theme's GitHub repo"
-              >GitHub</a
+              title="Visit theme's repository"
+              >{{ getRepoHost(theme.repo) }}</a
             >
           </template>
 
@@ -119,6 +119,15 @@ export default defineComponent({
   methods: {
     getImageUrl(path: string) {
       return path;
+    },
+    getRepoHost(repo: string) {
+      if (repo.match(/(github\.com\/).*/)) {
+        return "GitHub";
+      } else if (repo.match(/(gitlab\.com\/).*/)) {
+        return "GitLab";
+      } else {
+        return "Repo";
+      }
     },
   },
   setup() {
