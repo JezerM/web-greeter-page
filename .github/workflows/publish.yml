@@ -1,5 +1,16 @@
 name: Build and Publish
-on: [push]
+on:
+  push:
+    paths:
+      - "src/**"
+      - "public/**"
+      - "index.html"
+      - "tsconfig.json"
+      - "tsconfig.node.json"
+      - "vite.config.ts"
+      - "tailwind.config.js"
+      - "package.json"
+      - "package-lock.json"
 jobs:
   build-and-publish:
     concurrency: ci-${{ github.ref }}
