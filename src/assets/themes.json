@@ -4,15 +4,15 @@
       "name": "Gruvbox",
       "repo": "https://github.com/JezerM/web-greeter/tree/master/themes/gruvbox",
       "description": "Simple theme with gruvbox color scheme. Based on glorious-theme by manilarome.",
-      "imagePrimary": "../assets/themes/gruvbox-screenshot.png",
-      "imageSecondary": "../assets/themes/gruvbox-screenshot-second.png"
+      "imagePrimary": "images/gruvbox-screenshot.png",
+      "imageSecondary": "images/gruvbox-screenshot-second.png"
     },
     {
       "name": "Dracula",
       "repo": "https://github.com/JezerM/web-greeter/tree/master/themes/dracula",
       "description": "Simple theme with dracula color scheme. Based on glorious-theme by manilarome.",
-      "imagePrimary": "../assets/themes/dracula-screenshot.png",
-      "imageSecondary": "../assets/themes/dracula-screenshot-second.png"
+      "imagePrimary": "images/dracula-screenshot.png",
+      "imageSecondary": "images/dracula-screenshot-second.png"
     }
   ],
   "community": []

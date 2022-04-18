@@ -61,7 +61,7 @@ export default defineComponent({
   },
   methods: {
     getImageUrl(path: string) {
-      return new URL(path, import.meta.url).href;
+      return path;
     },
   },
   setup() {
