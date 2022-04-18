@@ -24,9 +24,6 @@ export default defineComponent({
     Features,
     Footer,
   },
-  mounted() {
-    this.$router.push("/home");
-  },
 });
 </script>
 

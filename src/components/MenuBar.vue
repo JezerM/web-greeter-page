@@ -1,6 +1,6 @@
 <template>
   <div id="menuBar">
-    <router-link id="titleWrapper" to="/home">
+    <router-link id="titleWrapper" to="/">
       <h3>{{ title }}</h3>
     </router-link>
     <div id="menuBarLinks">
