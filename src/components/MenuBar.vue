@@ -5,7 +5,7 @@
     </router-link>
     <div id="menuBarLinks">
       <router-link to="/themes">Themes</router-link>
-      <a href="https://jezerm.github.io/web-greeter/">Docs</a>
+      <a href="/docs">Docs</a>
     </div>
   </div>
 </template>
