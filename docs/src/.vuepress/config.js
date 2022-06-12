@@ -98,6 +98,7 @@ module.exports = {
             "/api/Greeter",
             "/api/GreeterConfig",
             "/api/ThemeUtils",
+            "/api/GreeterComm",
             "/api/window",
           ],
         },
