@@ -53,7 +53,7 @@ module.exports = {
     ],
   ],
 
-  base: "/docs/",
+  base: "/web-greeter-page/docs/",
   dest: "../dist/docs/",
 
   /**

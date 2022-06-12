@@ -9,12 +9,12 @@ import Home from "./views/Home.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
+    path: "/web-greeter-page/",
     name: "Home",
     component: Home,
   },
   {
-    path: "/themes",
+    path: "/web-greeter-page/themes",
     name: "Themes",
     component: () => import("./views/Themes.vue"),
   },

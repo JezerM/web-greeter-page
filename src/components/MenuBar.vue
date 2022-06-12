@@ -1,11 +1,11 @@
 <template>
   <div id="menuBar">
-    <router-link id="titleWrapper" to="/">
+    <router-link id="titleWrapper" to="/web-greeter-page/">
       <h3>{{ title }}</h3>
     </router-link>
     <div id="menuBarLinks">
-      <router-link to="/themes">Themes</router-link>
-      <a href="/docs">Docs</a>
+      <router-link to="/web-greeter-page/themes">Themes</router-link>
+      <a href="/web-greeter-page/docs">Docs</a>
     </div>
   </div>
 </template>
