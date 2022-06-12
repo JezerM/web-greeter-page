@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - "src/**"
+      - "docs/**"
       - "public/**"
       - "index.html"
       - "tsconfig.json"
@@ -11,6 +12,7 @@ on:
       - "tailwind.config.js"
       - "package.json"
       - "package-lock.json"
+      - ".github/workflows/**"
 jobs:
   build-and-publish:
     concurrency: ci-${{ github.ref }}
