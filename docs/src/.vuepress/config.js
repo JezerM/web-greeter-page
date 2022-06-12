@@ -74,6 +74,8 @@ module.exports = {
       {
         text: "Home",
         link: "https://jezerm.github.io/web-greeter-page/",
+        target: "_self",
+        rel: "prev",
       },
       {
         text: "Guide",
