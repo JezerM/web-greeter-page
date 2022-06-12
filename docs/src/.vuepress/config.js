@@ -72,6 +72,10 @@ module.exports = {
 
     nav: [
       {
+        text: "Home",
+        link: "https://jezerm.github.io/web-greeter-page/",
+      },
+      {
         text: "Guide",
         link: "/",
       },
