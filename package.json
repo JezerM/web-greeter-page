@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "install": "npm install --prefix docs/",
     "dev": "vite --host",
     "build": "vite-ssg build && npm run build --prefix docs/",
     "preview": "vite preview --host"
