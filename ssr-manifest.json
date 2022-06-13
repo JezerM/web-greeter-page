@@ -1312,15 +1312,15 @@
     "/web-greeter-page/assets/Inter.var.85f08b5f.woff2"
   ],
   "src/assets/themes.json": [
-    "/web-greeter-page/assets/Themes.d8f2364a.js",
+    "/web-greeter-page/assets/Themes.d0a826a3.js",
     "/web-greeter-page/assets/Themes.c798e5f6.css"
   ],
   "src/views/Themes.vue?vue&type=style&index=0&lang.css": [
-    "/web-greeter-page/assets/Themes.d8f2364a.js",
+    "/web-greeter-page/assets/Themes.d0a826a3.js",
     "/web-greeter-page/assets/Themes.c798e5f6.css"
   ],
   "src/views/Themes.vue": [
-    "/web-greeter-page/assets/Themes.d8f2364a.js",
+    "/web-greeter-page/assets/Themes.d0a826a3.js",
     "/web-greeter-page/assets/Themes.c798e5f6.css"
   ]
 }
