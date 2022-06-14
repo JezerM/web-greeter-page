@@ -16,11 +16,13 @@
           <template #header>
             <h3>{{ theme.name }}</h3>
             <h5>{{ theme.author }}</h5>
+            <h5 v-if="theme.multiMonitor == true">Multi monitor support</h5>
             <p>{{ theme.description }}</p>
 
             <a
               class="button buttonRepo"
               :href="theme.repo"
+              target="_blank"
               title="Visit theme's repository"
               >{{ getRepoHost(theme.repo) }}</a
             >
@@ -63,11 +65,13 @@
           <template #header>
             <h3>{{ theme.name }}</h3>
             <h5>{{ theme.author }}</h5>
+            <h5 v-if="theme.multiMonitor == true">Multi monitor support</h5>
             <p>{{ theme.description }}</p>
 
             <a
               class="button buttonRepo"
               :href="theme.repo"
+              target="_blank"
               title="Visit theme's repository"
               >{{ getRepoHost(theme.repo) }}</a
             >
