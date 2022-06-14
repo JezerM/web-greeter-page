@@ -39,8 +39,7 @@
           <h3>Multi-monitor support</h3>
           <p>
             Use a multi-monitor setup with multiple windows that can communicate
-            with each other instantly.<br />
-            (Only available in Nody Greeter)
+            with each other instantly.
           </p>
         </template>
       </Card>
