@@ -53,14 +53,45 @@ meets at least one of the following conditions:
     </tr>  </tbody>
 </table>
 
+## theme_utils.dirlist_sync(path, only_images) ⇒ <code>string[]</code>
+Returns the contents of directory found at `path` provided that the (normalized) `path`
+meets at least one of the following conditions:
+  * Is located within the greeter themes' root directory.
+  * Has been explicitly allowed in the greeter's config file.
+  * Is located within the greeter's shared data directory (`/var/lib/lightdm-data`).
+  * Is located in `/tmp`.
+
+**Availability**: `nody-greeter`
+
+**Experimental**: Available only for nody-greeter. DO NOT use it if you want compatibility between web-greeter and nody-greeter.
+
+<table>
+  <thead>
+    <tr>
+      <th>Param</th><th>Type</th><th>Default</th><th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+    <td>path</td><td><code>string</code></td><td></td><td><p>The path to the desired directory.</p>
+</td>
+    </tr>
+<tr>
+    <td>only_images</td><td><code>boolean</code></td><td><code>true</code></td><td><p>Include only images in the results. Default <code>true</code>.</p></td>
+</tr>
+  </tbody>
+</table>
+
+**Returns**: `string[]` - List of content paths
+
 ## theme_utils.get\_current\_localized\_date() ⇒ <code>string</code>
 Get the current date in a localized format. Local language is autodetected by default, but can be set manually in the greeter config file.
 `language` defaults to the system's language, but can be set manually in the config file.
 
-**Returns**: <code>string</code> - The current date.  
+**Returns**: <code>string</code> - The current date.
 
 ## theme_utils.get\_current\_localized\_time() ⇒ <code>string</code>
 Get the current time in a localized format. Local language is autodetected by default, but can be set manually in the greeter config file.
 `language` defaults to the system's language, but can be set manually in the config file.
 
-**Returns**: <code>string</code> - The current time.  
+**Returns**: <code>string</code> - The current time.
