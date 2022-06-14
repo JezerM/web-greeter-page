@@ -45,7 +45,7 @@
       "description": " A nody-greeter / web-greeter 3.0 theme to mimic the Windows XP login screen.",
       "multiMonitor": true,
       "imagePrimary": "https://github.com/mshernandez5/WelcomeXP/raw/master/screenshot/login.png",
-      "imageSecondary": "https://github.com/mshernandez5/WelcomeXP/raw/master/screenshot/shutdown_options.png"
+      "imageSecondary": "https://github.com/mshernandez5/WelcomeXP/raw/7b99be71c2f9cdfb1bebeb6aa7edead2159a60c8/screenshot/shutdown_options.png"
     },
     {
       "name": "Void theme",
