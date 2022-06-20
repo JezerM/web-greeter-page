@@ -56,6 +56,17 @@ module.exports = {
   base: "/web-greeter-page/docs/",
   dest: "../dist/docs/",
 
+  locales: {
+    "/": {
+      lang: "en-US",
+      title: "Web Greeter Documentation",
+    },
+    "/es/": {
+      lang: "es",
+      title: "Documentación de Web Greeter",
+    },
+  },
+
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
@@ -70,70 +81,143 @@ module.exports = {
 
     smoothScroll: true,
 
-    nav: [
-      {
-        text: "Home",
-        link: "https://jezerm.github.io/web-greeter-page/",
-        target: "_self",
-        rel: "prev",
-      },
-      {
-        text: "Guide",
-        link: "/",
-      },
-      {
-        text: "API",
-        link: "/api/",
-      },
-    ],
-    sidebar: {
-      "/api/": [
-        {
-          title: "API",
-          collapsable: true,
-          sidebarDepth: 3,
-          children: [
-            "",
-            "/api/LightDM",
-            "/api/Greeter",
-            "/api/GreeterConfig",
-            "/api/ThemeUtils",
-            "/api/GreeterComm",
-            "/api/window",
+    locales: {
+      "/": {
+        selectText: "Languages",
+        label: "English",
+        ariaLabel: "Languages",
+
+        nav: [
+          {
+            text: "Home",
+            link: "https://jezerm.github.io/web-greeter-page/",
+            target: "_self",
+            rel: "prev",
+          },
+          {
+            text: "Guide",
+            link: "/",
+          },
+          {
+            text: "API",
+            link: "/api/",
+          },
+        ],
+        sidebar: {
+          "/api/": [
+            {
+              title: "API",
+              collapsable: true,
+              sidebarDepth: 3,
+              children: [
+                "",
+                "/api/LightDM",
+                "/api/Greeter",
+                "/api/GreeterConfig",
+                "/api/ThemeUtils",
+                "/api/GreeterComm",
+                "/api/window",
+              ],
+            },
+            {
+              title: "LDMObjects",
+              collapsable: true,
+              sidebarDepth: 3,
+              children: [
+                "/api/Battery",
+                "/api/Language",
+                "/api/Layout",
+                "/api/User",
+                "/api/Session",
+                "/api/Signal",
+              ],
+            },
+          ],
+          "/": [
+            {
+              title: "Introduction",
+              collapsable: false,
+              children: ["", "Why"],
+            },
+            {
+              title: "Guide",
+              collapsable: false,
+              children: [
+                "/guide/intro",
+                "/guide/auth_methods",
+                "/guide/signals",
+                "/guide/howto_auth",
+                "/guide/theming",
+              ],
+            },
           ],
         },
-        {
-          title: "LDMObjects",
-          collapsable: true,
-          sidebarDepth: 3,
-          children: [
-            "/api/Battery",
-            "/api/Language",
-            "/api/Layout",
-            "/api/User",
-            "/api/Session",
-            "/api/Signal",
+      },
+      "/es/": {
+        selectText: "Idiomas",
+        label: "Español",
+        ariaLabel: "Idiomas",
+
+        nav: [
+          {
+            text: "Inicio",
+            link: "https://jezerm.github.io/web-greeter-page/",
+            target: "_self",
+            rel: "prev",
+          },
+          {
+            text: "Guía",
+            link: "/es/",
+          },
+          {
+            text: "API",
+            link: "/es/api/",
+          },
+        ],
+        sidebar: {
+          "/es/api/": [
+            {
+              title: "API",
+              collapsable: true,
+              sidebarDepth: 3,
+              children: [
+                "/es/api/",
+                "/es/api/LightDM",
+                "/es/api/Greeter",
+                "/es/api/GreeterConfig",
+                "/es/api/ThemeUtils",
+                "/es/api/GreeterComm",
+                "/es/api/window",
+              ],
+            },
+            {
+              title: "LDMObjects",
+              collapsable: true,
+              sidebarDepth: 3,
+              children: [
+                "/es/api/Battery",
+                "/es/api/Language",
+                "/es/api/Layout",
+                "/es/api/User",
+                "/es/api/Session",
+                "/es/api/Signal",
+              ],
+            },
+          ],
+          "/es/": [
+            {
+              title: "Introducción",
+              collapsable: false,
+              children: ["/es/", "/es/Why"],
+            },
+            {
+              title: "Guía",
+              collapsable: false,
+              children: ["/es/guide/intro"],
+            },
           ],
         },
-      ],
-      "/": [
-        {
-          title: "Introduction",
-          collapsable: false,
-          children: ["", "Why"],
-        },
-        {
-          title: "Guide",
-          collapsable: false,
-          children: [
-            "/guide/intro",
-            "/guide/auth_methods",
-            "/guide/signals",
-            "/guide/howto_auth",
-            "/guide/theming",
-          ],
-        },
-      ],
+      },
     },
   },
 
