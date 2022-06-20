@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <header id="card-header" class="px-8 pt-8 text-left">
+    <header id="card-header" class="p-8 text-left">
       <slot name="header"></slot>
     </header>
     <header id="card-content">
