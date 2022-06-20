@@ -29,7 +29,7 @@ Disconnects a callback to the signal.
   </thead>
   <tbody>
 <tr>
-    <td>callback</td><td><code>function</code></td><td><p>The callback to disattach.</p>
+    <td>callback</td><td><code>function</code></td><td><p>The callback to detach.</p>
 </td>
     </tr>  </tbody>
 </table>

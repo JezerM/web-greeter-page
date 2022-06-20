@@ -80,7 +80,7 @@ Holds keys/values from the `features` section of the config file.
   </thead>
   <tbody>
 <tr>
-    <td>battery</td><td><code>boolean</code></td><td><p>Enable greeter and themes to ger battery status.</p>
+    <td>battery</td><td><code>boolean</code></td><td><p>Enable greeter and themes to get battery status.</p>
 </td>
     </tr><tr>
     <td>backlight</td><td><code>Object</code></td><td></td>
