@@ -1,8 +1,4 @@
----
-title: Signal
----
-
-# {{ $frontmatter.title }}
+# Signal
 Interface for signals connected to LightDM itself. This is not created by the theme's code, but rather by Web Greeter.
 When Web Greeter triggers the signal, all calbacks are executed.
 

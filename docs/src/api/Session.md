@@ -1,10 +1,6 @@
----
-title: Session
----
-
-# {{ $frontmatter.title }}
+# Session
 Interface for object that holds info about a session. Session objects are not
-created by the theme's code, but rather by the [`LightDM.Greeter`](Greeter) class.
+created by the theme's code, but rather by the [`LightDM.Greeter`](Greeter.html) class.
 
 ## name : <code>string</code>
 The name for the session.

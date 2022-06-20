@@ -1,8 +1,4 @@
----
-title: Window
----
-
-# {{ $frontmatter.title }}
+# Window
 The global window object.
 
 ## window.lightdm : [<code>Greeter</code>](Greeter.html)

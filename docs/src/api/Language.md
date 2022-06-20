@@ -1,10 +1,6 @@
----
-title: Language
----
-
-# {{ $frontmatter.title }}
+# Language
 Interface for object that holds info about a language on the system. Language objects are not
-created by the theme's code, but rather by the [`LightDM.Greeter`](Greeter) class.
+created by the theme's code, but rather by the [`LightDM.Greeter`](Greeter.html) class.
 
 ## code : <code>string</code>
 The code for the language.

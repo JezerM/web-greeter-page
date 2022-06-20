@@ -1,10 +1,6 @@
----
-title: User
----
-
-# {{ $frontmatter.title }}
+# User
 Interface for object that holds info about a user account on the system. User
-objects are not created by the theme's code, but rather by the [`LightDM.Greeter`](Greeter) class.
+objects are not created by the theme's code, but rather by the [`LightDM.Greeter`](Greeter.html) class.
 
 ## background : <code>string</code>
 The user background if any
@@ -27,7 +23,7 @@ The keyboard layout for the user.
 **Read only**: true
 
 ## layouts : <code>Array.&lt;string&gt;</code>
-The keyboard layouts the user have. You should not depend on this property, use [`greeter_config.layouts`](/api/GreeterConfig#LightDM_GreeterConfig-layouts) instead.
+The keyboard layouts the user have. You should not depend on this property, use [`greeter_config.layouts`](GreeterConfig.html#greeter-config-layouts) instead.
 
 **Read only**: true
 

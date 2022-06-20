@@ -1,8 +1,4 @@
----
-title: GreeterComm
----
-
-# {{ $frontmatter.title }}
+# GreeterComm
 Provides a cross-window communication system, useful for
 multi-monitor setups. The instance can be accessed with the global
 variable: `greeter_comm`

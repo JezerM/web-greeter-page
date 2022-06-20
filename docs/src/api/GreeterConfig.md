@@ -1,8 +1,4 @@
----
-title: GreeterConfig
----
-
-# {{ $frontmatter.title }}
+# GreeterConfig
 Provides greeter themes with a way to access values from the greeter's config
 file located at `/etc/lightdm/web-greeter.yml`. The greeter will
 create an instance of this class when it starts. The instance can be accessed
@@ -100,7 +96,7 @@ Holds keys/values from the `features` section of the config file.
     </tr>  </tbody>
 </table>
 
-## greeter_config.layouts : [<code>Array.&lt;Layout&gt;</code>](Layout)
+## greeter_config.layouts : [<code>Array.&lt;Layout&gt;</code>](Layout.html)
 Holds a list of preferred layouts from the `layouts` section of the config file.
 
 **Read only**: true

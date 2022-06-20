@@ -1,10 +1,6 @@
----
-title: Battery
----
+# Battery
 
-# {{ $frontmatter.title }}
-
-Interface for object that holds info about the battery on the system. This object is not created by the theme's code, but rather by the [`LightDM.Greeter`](Greeter) class.
+Interface for object that holds info about the battery on the system. This object is not created by the theme's code, but rather by the [`LightDM.Greeter`](Greeter.html) class.
 
 ## name : <code>string</code>
 The battery's name.

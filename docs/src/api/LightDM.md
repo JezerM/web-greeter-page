@@ -1,8 +1,4 @@
----
-title: LightDM
----
-
-# {{ $frontmatter.title }}
+# LightDM
 The greeter's Theme JavaScript API.
 Accesible through `lightdm` global variable.
 

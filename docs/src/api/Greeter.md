@@ -1,8 +1,4 @@
----
-title: Greeter
----
-
-# {{ $frontmatter.title }}
+# Greeter
 Base class for the greeter's Theme JavaScript API. Greeter themes will interact
 directly with an object derived from this class to facilitate the user log-in process.
 The greeter will automatically create an instance when it starts.
@@ -30,14 +26,14 @@ The username with which to automattically log in when the timer expires.
 
 **Read only**: true
 
-## ~~lightdm.batteryData : [<code>Battery</code>](Battery)~~
-***Deprecated***: Use [`battery_data`](Greeter#LightDM_Greeter-battery_data)
+## ~~lightdm.batteryData : [<code>Battery</code>](Battery.html)~~
+***Deprecated***: Use [`battery_data`](Greeter.html#lightdm-battery-data)
 
 Gets the battery data.
 
 **Read only**: true
 
-## lightdm.battery\_data : [<code>Battery</code>](Battery)
+## lightdm.battery\_data : [<code>Battery</code>](Battery.html)
 Gets the battery data.
 
 **Read only**: true
@@ -106,21 +102,21 @@ Whether or not the greeter has successfully authenticated.
 
 **Read only**: true
 
-## lightdm.language : [<code>Language</code>](Language) \| <code>null</code>
+## lightdm.language : [<code>Language</code>](Language.html) \| <code>null</code>
 The current language or "null" if no language.
 
 **Read only**: true
 
-## lightdm.languages : [<code>Array.&lt;Language&gt;</code>](Language)
+## lightdm.languages : [<code>Array.&lt;Language&gt;</code>](Language.html)
 A list of languages to present to the user.
 
 **Read only**: true
 
-## lightdm.layout : [<code>Layout</code>](Layout)
+## lightdm.layout : [<code>Layout</code>](Layout.html)
 The currently active layout for the selected user.
 
 
-## lightdm.layouts : [<code>Array.&lt;Layout&gt;</code>](Layout)
+## lightdm.layouts : [<code>Array.&lt;Layout&gt;</code>](Layout.html)
 A list of keyboard layouts to present to the user.
 
 **Read only**: true
@@ -130,7 +126,7 @@ Whether or not the greeter was started as a lock screen.
 
 **Read only**: true
 
-## lightdm.remote\_sessions : [<code>Array.&lt;Session&gt;</code>](Session)
+## lightdm.remote\_sessions : [<code>Array.&lt;Session&gt;</code>](Session.html)
 A list of remote sessions.
 
 **Read only**: true
@@ -145,7 +141,7 @@ The username to select by default.
 
 **Read only**: true
 
-## lightdm.sessions : [<code>Array.&lt;Session&gt;</code>](Session)
+## lightdm.sessions : [<code>Array.&lt;Session&gt;</code>](Session.html)
 List of available sessions.
 
 **Read only**: true
@@ -164,41 +160,41 @@ a way for a user to log into a remote desktop server.
 **Read only**: true
 **Internal**:   
 
-## lightdm.users : [<code>Array.&lt;User&gt;</code>](User)
+## lightdm.users : [<code>Array.&lt;User&gt;</code>](User.html)
 List of available users.
 
 **Read only**: true
 
-## lightdm.authentication\_complete : [<code>Signal</code>](Signal)
+## lightdm.authentication\_complete : [<code>Signal</code>](Signal.html)
 Gets emitted when the greeter has completed authentication.
 
 
-## lightdm.autologin\_timer\_expired : [<code>Signal</code>](Signal)
+## lightdm.autologin\_timer\_expired : [<code>Signal</code>](Signal.html)
 Gets emitted when the automatic login timer has expired.
 
 
-## lightdm.brightness\_update : [<code>Signal</code>](Signal)
+## lightdm.brightness\_update : [<code>Signal</code>](Signal.html)
 Gets emitted when brightness is updated
 
 
-## lightdm.battery\_update : [<code>Signal</code>](Signal)
+## lightdm.battery\_update : [<code>Signal</code>](Signal.html)
 Gets emitted when battery is updated
 
 
-## lightdm.idle : [<code>Signal</code>](Signal)
+## lightdm.idle : [<code>Signal</code>](Signal.html)
 Gets emitted when the user has logged in and the greeter is no longer needed.
 
 
-## lightdm.reset : [<code>Signal</code>](Signal)
+## lightdm.reset : [<code>Signal</code>](Signal.html)
 Gets emitted when the user is returning to a greeter that
 was previously marked idle.
 
 
-## lightdm.show\_message : [<code>Signal</code>](Signal)
+## lightdm.show\_message : [<code>Signal</code>](Signal.html)
 Gets emitted when the greeter should show a message to the user.
 
 
-## lightdm.show\_prompt : [<code>Signal</code>](Signal)
+## lightdm.show\_prompt : [<code>Signal</code>](Signal.html)
 Gets emitted when the greeter should show a prompt to the user.
 
 
@@ -226,7 +222,7 @@ Starts the authentication procedure for the guest user.
 **Returns**: <code>boolean</code> - Whether it is successful or not  
 
 ## ~~lightdm.brightnessSet(quantity)~~
-***Deprecated***: Use [`brightness_set`](Greeter#LightDM_Greeter-brightness_set)
+***Deprecated***: Use [`brightness_set`](Greeter.html#lightdm-brightness-set)
 
 Set the brightness to quantity
 
@@ -262,7 +258,7 @@ Set the brightness to quantity
 
 
 ## ~~lightdm.brightnessIncrease(quantity)~~
-***Deprecated***: Use [`brightness_increase`](Greeter#LightDM_Greeter-brightness_increase)
+***Deprecated***: Use [`brightness_increase`](Greeter.html#lightdm-brightness-increase)
 
 Increase the brightness by quantity
 
@@ -298,7 +294,7 @@ Increase the brightness by quantity
 
 
 ## ~~lightdm.brightnessDecrease(quantity)~~
-***Deprecated***: Use [`brightness_decrease`](Greeter#LightDM_Greeter-brightness_decrease)
+***Deprecated***: Use [`brightness_decrease`](Greeter.html#lightdm-brightness-decrease)
 
 Decrease the brightness by quantity
 

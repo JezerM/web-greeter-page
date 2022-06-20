@@ -1,10 +1,6 @@
----
-title: Layout
----
-
-# {{ $frontmatter.title }}
+# Layout
 Interface for object that holds info about a keyboard layout on the system. Language
-objects are not created by the theme's code, but rather by the [`LightDM.Greeter`](Greeter) class.
+objects are not created by the theme's code, but rather by the [`LightDM.Greeter`](Greeter.html) class.
 
 ## description : <code>string</code>
 The description for the layout.
