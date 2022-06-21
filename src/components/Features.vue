@@ -34,7 +34,7 @@
         </template>
       </Card>
 
-      <Card class="col-span-12 flex-col md:flex-row multiMonGradient">
+      <Card class="col-span-12 flex-col md:!flex-row multiMonGradient">
         <template #header>
           <h3>Multi-monitor support</h3>
           <p>

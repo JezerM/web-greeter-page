@@ -25,6 +25,7 @@ export default defineComponent({
   display: flex;
   position: relative;
 
+  flex-direction: column;
   justify-content: space-between;
   gap: 12px;
 
