@@ -44,8 +44,8 @@
         </template>
         <LazyImg
           class="self-end"
-          src="/images/web-greeter-multi-monitor-setup.png"
-          placeholder="/images/web-greeter-multi-monitor-setup-low.png"
+          src="images/web-greeter-multi-monitor-setup.png"
+          placeholder="images/web-greeter-multi-monitor-setup-low.png"
           alt="Web Greeter Multi Monitor Setup"
           width="1920"
         />
