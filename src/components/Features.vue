@@ -42,6 +42,11 @@
             with each other instantly.
           </p>
         </template>
+        <LazyImg
+          src="/images/web-greeter-multi-monitor-setup.png"
+          placeholder="/images/web-greeter-multi-monitor-setup-low.png"
+          alt="Web Greeter Multi Monitor Setup"
+        />
       </Card>
     </CardContainer>
   </section>
@@ -51,11 +56,13 @@
 import { defineComponent } from "vue";
 import Card from "./Card.vue";
 import CardContainer from "./CardContainer.vue";
+import LazyImg from "./LazyImg.vue";
 
 export default defineComponent({
   components: {
     Card,
     CardContainer,
+    LazyImg,
   },
   setup() {},
 });
