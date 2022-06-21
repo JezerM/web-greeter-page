@@ -1,5 +1,11 @@
 <template>
-  <img :src="placeholder ?? src" :alt="alt ?? ''" :class="class" />
+  <img
+    :src="placeholder ?? src"
+    :alt="alt ?? ''"
+    :class="class"
+    :width="width"
+    :height="height"
+  />
 </template>
 
 <script lang="ts">
@@ -20,6 +26,14 @@ export default defineComponent({
       type: String,
       required: false,
     },
+    width: {
+      type: String,
+      required: false,
+    },
+    height: {
+      type: String,
+      required: false,
+    },
   },
   mounted() {
     let lazyImageObserver = new IntersectionObserver((entries, observer) => {
@@ -28,6 +42,9 @@ export default defineComponent({
           let lazyImage = entry.target;
           lazyImage.src = this.$props.src;
           lazyImageObserver.unobserve(lazyImage);
+          lazyImage.onerror = () => {
+            lazyImage.src = this.$props.placeholder;
+          };
         }
       });
     });
