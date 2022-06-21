@@ -3,7 +3,7 @@
     <h2 class="mb-6">Features</h2>
 
     <CardContainer>
-      <Card class="col-span-12 md:col-span-7 webTechGradient">
+      <Card class="col-span-12 row-span-2 md:col-span-7 webTechGradient">
         <template #header>
           <h3>Create themes with web technologies</h3>
           <p>
@@ -24,7 +24,7 @@
         </template>
       </Card>
 
-      <Card class="col-span-12 md:col-span-6 batteryGradient">
+      <Card class="col-span-12 md:col-span-5 batteryGradient">
         <template #header>
           <h3>Battery and Brightness control</h3>
           <p>
@@ -34,7 +34,7 @@
         </template>
       </Card>
 
-      <Card class="col-span-12 md:col-span-6 multiMonGradient">
+      <Card class="col-span-12 flex-col md:flex-row multiMonGradient">
         <template #header>
           <h3>Multi-monitor support</h3>
           <p>
@@ -43,6 +43,7 @@
           </p>
         </template>
         <LazyImg
+          class="self-end"
           src="/images/web-greeter-multi-monitor-setup.png"
           placeholder="/images/web-greeter-multi-monitor-setup-low.png"
           alt="Web Greeter Multi Monitor Setup"
