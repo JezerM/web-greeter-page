@@ -1,5 +1,5 @@
 <template>
-  <img :src="placeholder ?? src" :alt="alt ?? ''" />
+  <img :src="placeholder ?? src" :alt="alt ?? ''" :class="class" />
 </template>
 
 <script lang="ts">
@@ -13,6 +13,10 @@ export default defineComponent({
       required: false,
     },
     alt: {
+      type: String,
+      required: false,
+    },
+    class: {
       type: String,
       required: false,
     },

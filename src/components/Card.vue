@@ -3,7 +3,7 @@
     <header id="card-header" class="p-8 text-left">
       <slot name="header"></slot>
     </header>
-    <header id="card-content">
+    <header id="card-content" class="flex">
       <slot></slot>
     </header>
   </div>
@@ -25,7 +25,6 @@ export default defineComponent({
   display: flex;
   position: relative;
 
-  flex-direction: column;
   justify-content: space-between;
   gap: 12px;
 
@@ -35,6 +34,7 @@ export default defineComponent({
   overflow: hidden;
 }
 </style>
+
 <style>
 #card-header h3 {
   margin: 0;
