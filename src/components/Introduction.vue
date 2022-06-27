@@ -5,11 +5,6 @@
       A program that allows you to create and use wonderful themes in your Login
       Manager
     </h4>
-
-    <div id="introductionDivButtonGroup">
-      <a class="button" href="https://github.com/JezerM/web-greeter">GitHub</a>
-      <a class="button" href="">Install</a>
-    </div>
   </section>
 </template>
 
@@ -29,21 +24,10 @@ export default defineComponent({
   flex-direction: column;
   align-items: center;
 
-  margin: 25vh 15%;
+  margin: 28vh 15%;
 }
 #introductionDiv h1 {
   margin: 20px 0px;
   max-width: 800px;
-}
-#introductionDivButtonGroup {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 200px;
-  margin: 15px;
-}
-#introductionDivButtonGroup button {
-  font-size: 16px;
 }
 </style>
