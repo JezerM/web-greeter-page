@@ -18,18 +18,7 @@ sea activado. Evento accesible a través de `window._ready_event`.
 Greeter Broadcast Event. El evento es activado cuando un mensaje broadcast es
 enviado con [`greeter_comm.broadcast`](GreeterComm.html#greeter-comm-broadcast).
 
-<table>
-  <thead>
-    <tr>
-      <th>Parámetro</th><th>Tipo</th><th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr>
-    <td>window</td><td><code>WindowMetadata</code></td><td>Metadatos de la ventana de origen.</td>
-</tr>
-<tr>
-    <td>data</td><td><code>unknown</code></td></td><td>Datos personalizados recibidos.</td>
-</tr>
-  </tbody>
-</table>
+| Parámetro | Tipo | Descripción |
+| --------- | ---- | ----------- |
+| window | <code>WindowMetadata</code> | Metadatos de la ventada de origen. |
+| data | <code>unknown</code> | Datos personalizados recibidos. |

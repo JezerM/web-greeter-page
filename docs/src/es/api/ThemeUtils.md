@@ -9,18 +9,10 @@ puede ser accedida con la variable global: `theme_utils`.
 Une `this` a la clase, o sea el `context`, para todos los métodos de la clase.
 
 **Retorna**: <code>object</code> - `context` con el objeto `this` unido a todos sus métodos.
-<table>
-  <thead>
-    <tr>
-      <th>Parámetro</th><th>Tipo</th><th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr>
-    <td>context</td><td><code>object</code></td><td><p>Una instancia de clase ES6 con al menos un método.</p>
-</td>
-    </tr>  </tbody>
-</table>
+
+| Parámetro | Tipo | Descripción |
+| --------- | ---- | ----------- |
+| context | <code>object</code> | Una instancia de clase ES6 con al menos un método. |
 
 ## theme_utils.dirlist(path, only_images, callback)
 Retorna el contenido encontrado en el directorio de `path`, considerando
@@ -30,24 +22,11 @@ que el `path` normalizado cumple al menos una de las siguientes condiciones:
   * Está ubicado dentro del directorio compartido de datos (`/var/lib/lightdm-data`).
   * Está ubicado en `/tmp`.
 
-<table>
-  <thead>
-    <tr>
-      <th>Parámetro</th><th>Tipo</th><th>Por defecto</th><th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr>
-    <td>path</td><td><code>string</code></td><td></td><td><p>La ruta al directorio deseado.</p>
-</td>
-    </tr><tr>
-    <td>only_images</td><td><code>boolean</code></td><td><code>true</code></td><td><p>Incluye solamente imágenes en los resultados.</p>
-</td>
-    </tr><tr>
-    <td>callback</td><td><code>function</code></td><td></td><td><p>Función callback a ser llamada con el resultado.</p>
-</td>
-    </tr>  </tbody>
-</table>
+| Parámetro | Tipo | Por defecto | Descripción |
+| --------- | ---- | ----------- | ----------- |
+| path | <code>string</code> | | La ruta al directorio deseado. |
+| only_images | `boolean` | <code>true</code> | La ruta al directorio deseado. |
+| callback | `function` | | Función callback a ser llamada con el resultado. |
 
 ## theme_utils.dirlist_sync(path, only_images) ⇒ <code>string[]</code>
 Retorna el contenido encontrado en el directorio de `path`, considerando
@@ -61,22 +40,10 @@ que el `path` normalizado cumple al menos una de las siguientes condiciones:
 
 **Experimental**: Disponible sólo en nody-greeter. NO USAR si deseas compatibilidad entre web-greeter y nody-greeter.
 
-<table>
-  <thead>
-    <tr>
-      <th>Parámetro</th><th>Tipo</th><th>Por defecto</th><th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-<tr>
-    <td>path</td><td><code>string</code></td><td></td><td><p>La ruta al directorio deseado.</p>
-</td>
-    </tr>
-<tr>
-    <td>only_images</td><td><code>boolean</code></td><td><code>true</code></td><td><p>Incluye solamente imágenes en los resultados.</p>
-</tr>
-  </tbody>
-</table>
+| Parámetro | Tipo | Por defecto | Descripción |
+| --------- | ---- | ----------- | ----------- |
+| path | <code>string</code> | | La ruta al directorio deseado. |
+| only_images | `boolean` | <code>true</code> | La ruta al directorio deseado. |
 
 **Retorna**: `string[]` - Lista de rutas del contenido.
 

@@ -15,19 +15,19 @@ lightdm.respond(response)
 lightdm.start_session(session)
 ```
 
-### [lightdm.authenticate(username)](/api/Greeter.html#lightdm-authenticate)
+### [lightdm.authenticate(username)](/api/Greeter.md#lightdm-authenticate)
 This method starts the authentication procedure for a user, allowing to start the user session.
 
 If `username` is not provided, LightDM will prompt for it.
 
-### [lightdm.respond(response)](/api/Greeter.html#lightdm-respond)
+### [lightdm.respond(response)](/api/Greeter.md#lightdm-respond)
 Provide a response to a prompt. Basically, this behaves like a password provider. After the authentication is initiated, you need to provide the user password with this method. It could be "12345", "password", "strongpassword", y'know, a password.
 
 However, `lightdm.respond` can provide an user as well if `lightdm.authenticate` didn't receive an user.
 
 > NOTE: If authentication is not initiated, this will cause an error.
 
-### [lightdm.start_session(session)](/api/Greeter.html#lightdm-start-session)
+### [lightdm.start_session(session)](/api/Greeter.md#lightdm-start-session)
 Starts a session for the authenticated user. After the user is authenticated, you will need to start the session with this method.
 
 > NOTE: If user is not authenticated, this won't work.
@@ -79,4 +79,4 @@ async function initGreeter() {
 window.addEventListener("GreeterReady", initGreeter)
 ```
 
-See the next guide for more information, also see the [Signals](/guide/signals.html#signals) guide for a complete explanation of this.
+See the next guide for more information, also see the [Signals](/guide/signals.md#signals) guide for a complete explanation of this.
