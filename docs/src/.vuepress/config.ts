@@ -1,10 +1,11 @@
+import { defaultTheme, defineUserConfig } from "vuepress";
 const { description } = require("../../package");
 
 const rControl = /[\u0000-\u001f]/g;
 const rSpecial = /[\s~`!@#$%^&*()\-_+=[\]{}|\\;:"'“”‘’–—<>,.?/]+/g;
 const rCombining = /[\u0300-\u036F]/g;
 
-function slugify(str) {
+function slugify(str: string): string {
   const val = str
     .normalize("NFKD")
     // Remove accents
@@ -29,21 +30,10 @@ function slugify(str) {
   return val;
 }
 
-module.exports = {
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#title
-   */
+export default defineUserConfig({
   title: "Web Greeter Documentation",
-  /**
-   * Ref：https://v1.vuepress.vuejs.org/config/#description
-   */
   description: description,
 
-  /**
-   * Extra tags to be injected to the page HTML `<head>`
-   *
-   * ref：https://v1.vuepress.vuejs.org/config/#head
-   */
   head: [
     ["meta", { name: "theme-color", content: "#1a1a1a" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -53,7 +43,8 @@ module.exports = {
     ],
   ],
 
-  base: "/web-greeter-page/docs/",
+  //base: "/web-greeter-page/docs/",
+  base: "/docs/",
   dest: "../dist/docs/",
 
   locales: {
@@ -67,31 +58,25 @@ module.exports = {
     },
   },
 
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
-  themeConfig: {
+  theme: defaultTheme({
     repo: "",
-    editLinks: false,
+    editLink: false,
     docsDir: "",
     editLinkText: "",
     lastUpdated: false,
-
-    smoothScroll: true,
+    colorMode: "auto",
 
     locales: {
       "/": {
-        selectText: "Languages",
-        label: "English",
-        ariaLabel: "Languages",
+        selectLanguageText: "Languages",
+        selectLanguageName: "English",
+        selectLanguageAriaLabel: "Languages",
 
-        nav: [
+        navbar: [
           {
             text: "Home",
             link: "https://jezerm.github.io/web-greeter-page/",
-            target: "_self",
+            target: "__self",
             rel: "prev",
           },
           {
@@ -103,14 +88,14 @@ module.exports = {
             link: "/api/",
           },
         ],
+
         sidebar: {
           "/api/": [
             {
-              title: "API",
-              collapsable: true,
-              sidebarDepth: 3,
+              text: "API",
+              collapsible: true,
               children: [
-                "",
+                "/api/",
                 "/api/LightDM",
                 "/api/Greeter",
                 "/api/GreeterConfig",
@@ -120,9 +105,8 @@ module.exports = {
               ],
             },
             {
-              title: "LDMObjects",
-              collapsable: true,
-              sidebarDepth: 3,
+              text: "LDMObjects",
+              collapsible: true,
               children: [
                 "/api/Battery",
                 "/api/Language",
@@ -135,13 +119,13 @@ module.exports = {
           ],
           "/": [
             {
-              title: "Introduction",
-              collapsable: false,
-              children: ["", "Why"],
+              text: "Introduction",
+              collapsible: false,
+              children: ["/", "Why"],
             },
             {
-              title: "Guide",
-              collapsable: false,
+              text: "Guide",
+              collapsible: false,
               children: [
                 "/guide/intro",
                 "/guide/auth_methods",
@@ -154,11 +138,11 @@ module.exports = {
         },
       },
       "/es/": {
-        selectText: "Idiomas",
-        label: "Español",
-        ariaLabel: "Idiomas",
+        selectLanguageText: "Idiomas",
+        selectLanguageName: "Español",
+        selectLanguageAriaLabel: "Idiomas",
 
-        nav: [
+        navbar: [
           {
             text: "Inicio",
             link: "https://jezerm.github.io/web-greeter-page/",
@@ -177,9 +161,8 @@ module.exports = {
         sidebar: {
           "/es/api/": [
             {
-              title: "API",
-              collapsable: true,
-              sidebarDepth: 3,
+              text: "API",
+              collapsible: true,
               children: [
                 "/es/api/",
                 "/es/api/LightDM",
@@ -191,9 +174,8 @@ module.exports = {
               ],
             },
             {
-              title: "LDMObjects",
-              collapsable: true,
-              sidebarDepth: 3,
+              text: "LDMObjects",
+              collapsible: true,
               children: [
                 "/es/api/Battery",
                 "/es/api/Language",
@@ -206,35 +188,22 @@ module.exports = {
           ],
           "/es/": [
             {
-              title: "Introducción",
-              collapsable: false,
+              text: "Introducción",
+              collapsible: false,
               children: ["/es/", "/es/Why"],
             },
             {
-              title: "Guía",
-              collapsable: false,
+              text: "Guía",
+              collapsible: false,
               children: ["/es/guide/intro"],
             },
           ],
         },
       },
     },
-  },
+  }),
 
   markdown: {
     slugify: slugify,
-    anchor: {
-      //slugify: slugify,
-      permalink: true,
-      permalinkBefore: true,
-      permalinkSymbol: "#",
-    },
   },
-
-  /**
-   * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
-   */
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
-
-  evergreen: true,
-};
+});
