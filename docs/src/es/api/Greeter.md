@@ -8,164 +8,167 @@ La instancia puede ser accedida usando la variable global: `lightdm`.
 El username (nombre de usuario) del usuario que está siendo autenticado o "null"
 si no hay una autenticación en progreso.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.autologin\_guest : <code>boolean</code>
 Si la cuenta de invitado debería de iniciar sesión automáticamente o no
 cuando el temporizador expire.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.autologin\_timeout : <code>number</code>
 El número de segundos a esperar antes de iniciar sesión automáticamente.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.autologin\_user : <code>string</code>
 El username (nombre de usuario) con el que iniciar sesión automáticamente
 cuando el temporizador expire.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
-## ~~lightdm.batteryData : [<code>Battery</code>](Battery.html)~~
-***Deprecado***: Usa [`battery_data`](Greeter.html#lightdm-battery-data)
+## lightdm.batteryData : [<code>Battery</code>](Battery.html) <Deprecated />
+***Obsoleto***: Usa [`battery_data`](Greeter.html#lightdm-battery-data)
 
 Obtiene los datos de la batería.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.battery\_data : [<code>Battery</code>](Battery.html)
 Obtiene los datos de la batería.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.brightness : <code>number</code>
 El brillo actual.
 
+<ReadOnly :readOnly="false" />
 
 ## lightdm.can\_access\_battery : <code>boolean</code>
 Si el greeter puede acceder a los datos de la batería o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.can\_access\_brightness : <code>boolean</code>
 Si el greeter puede controlar el brillo de la pantalla o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.can\_hibernate : <code>boolean</code>
 Si el greeter puede hacer que el sistema hiberne o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.can\_restart : <code>boolean</code>
 Si el greeter puede hacer que el sistema se reinicie o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.can\_shutdown : <code>boolean</code>
 Si el greeter puede hacer que el sistema se apague o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.can\_suspend : <code>boolean</code>
 Si el greeter puede hacer que el sistema se suspenda o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.default\_session : <code>string</code>
 El nombre de la sesión por defecto.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.has\_guest\_account : <code>boolean</code>
 Si las sesiones de invitado están permitidas o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.hide\_users\_hint : <code>boolean</code>
 Si las cuentas de usuario deberían de estar ocultas o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.hostname : <code>string</code>
 El nombre de host del sistema.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.in\_authentication : <code>boolean</code>
 Si el greeter está en proceso de autenticación o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.is\_authenticated : <code>boolean</code>
 Si el usuario se ha autenticado exitosamente o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.language : [<code>Language</code>](Language.html) \| <code>null</code>
 El idioma actual o "null".
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.languages : [<code>Array.&lt;Language&gt;</code>](Language.html)
 Una lista de los lenguajes a presentar al usuario.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.layout : [<code>Layout</code>](Layout.html)
 La fuente de entrada de teclado activa para el usuario seleccionado.
 
+<ReadOnly :readOnly="false" />
 
 ## lightdm.layouts : [<code>Array.&lt;Layout&gt;</code>](Layout.html)
 Una lista de fuentes de entrada de teclado a presentar al usuario.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.lock\_hint : <code>boolean</code>
 Si el greeter fue iniciado como una pantalla de bloqueo o no.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.remote\_sessions : [<code>Array.&lt;Session&gt;</code>](Session.html)
 Una lista de sesiones remotas.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.select\_guest\_hint : <code>boolean</code>
 Si el usuario invitado debería de ser seleccionado por defecto.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.select\_user\_hint : <code>string</code> \| <code>undefined</code>
 El username (nombre de usuario) a seleccionar por defecto.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.sessions : [<code>Array.&lt;Session&gt;</code>](Session.html)
 Una lista de sesiones disponibles.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.show\_manual\_login\_hint : <code>boolean</code>
 Si una opción de inicio de sesión manual debería de mostrarse o no. Si es "true",
 el tema debería de proveer una forma manual de ingresar el usuario. De otro modo,
 los temas sólo deberían de mostrar la lista de usuarios proveída por el greeter.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.show\_remote\_login\_hint : <code>boolean</code>
 Si una opción de inicio de sesión remoto debería de mostrarse o no. Si es "true",
 el tema debería de proveer al usuario una forma de ingresar a un servidor de
 escritorio remoto.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
+
 **Interno**
 
 ## lightdm.users : [<code>Array.&lt;User&gt;</code>](User.html)
 Lista de usuarios disponibles.
 
-**Sólo lectura**: verdadero
+<ReadOnly />
 
 ## lightdm.authentication\_complete : [<code>Signal</code>](Signal.html)
 Es emitida cuando el greeter ha completado la autenticación.
@@ -222,8 +225,8 @@ Inicia el procedimiento de autenticación para el usuario invitado.
 
 **Retorna**: <code>boolean</code> - Si fue exitoso o no.
 
-## ~~lightdm.brightnessSet(quantity)~~
-***Deprecado***: Usa [`brightness_set`](Greeter.html#lightdm-brightness-set)
+## lightdm.brightnessSet(quantity) <Deprecated />
+***Obsoleto***: Usa [`brightness_set`](Greeter.html#lightdm-brightness-set)
 
 Establece el brillo a cierta cantidad.
 
@@ -258,8 +261,8 @@ Establece el brillo a cierta cantidad.
 </table>
 
 
-## ~~lightdm.brightnessIncrease(quantity)~~
-***Deprecado***: Usa [`brightness_increase`](Greeter.html#lightdm-brightness-increase)
+## lightdm.brightnessIncrease(quantity) <Deprecated />
+***Obsoleto***: Usa [`brightness_increase`](Greeter.html#lightdm-brightness-increase)
 
 Aumenta el brillo por cierta cantidad.
 
@@ -294,8 +297,8 @@ Aumenta el brillo por cierta cantidad.
 </table>
 
 
-## ~~lightdm.brightnessDecrease(quantity)~~
-***Deprecado***: Usa [`brightness_decrease`](Greeter.html#lightdm-brightness-decrease)
+## lightdm.brightnessDecrease(quantity) <Deprecated />
+***Obsoleto***: Usa [`brightness_decrease`](Greeter.html#lightdm-brightness-decrease)
 
 Disminuye el brillo por cierta cantidad.
 

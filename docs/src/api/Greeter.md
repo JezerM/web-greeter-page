@@ -8,162 +8,165 @@ The instance can be accessed using the global variable: `lightdm`.
 The username of the user being authenticated or "null"
 if no authentication is in progress
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.autologin\_guest : <code>boolean</code>
 Whether or not the guest account should be automatically logged
 into when the timer expires.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.autologin\_timeout : <code>number</code>
 The number of seconds to wait before automatically logging in.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.autologin\_user : <code>string</code>
 The username with which to automattically log in when the timer expires.
 
-**Read only**: true
+<ReadOnly />
 
-## ~~lightdm.batteryData : [<code>Battery</code>](Battery.html)~~
+## lightdm.batteryData : [<code>Battery</code>](Battery.html) <Deprecated />
 ***Deprecated***: Use [`battery_data`](Greeter.html#lightdm-battery-data)
 
 Gets the battery data.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.battery\_data : [<code>Battery</code>](Battery.html)
 Gets the battery data.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.brightness : <code>number</code>
 The current brightness
 
+<ReadOnly :readOnly="false" />
 
 ## lightdm.can\_access\_battery : <code>boolean</code>
 Whether or not the greeter can access to battery data.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.can\_access\_brightness : <code>boolean</code>
 Whether or not the greeter can control display brightness.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.can\_hibernate : <code>boolean</code>
 Whether or not the greeter can make the system hibernate.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.can\_restart : <code>boolean</code>
 Whether or not the greeter can make the system restart.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.can\_shutdown : <code>boolean</code>
 Whether or not the greeter can make the system shutdown.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.can\_suspend : <code>boolean</code>
 Whether or not the greeter can make the system suspend/sleep.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.default\_session : <code>string</code>
 The name of the default session.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.has\_guest\_account : <code>boolean</code>
 Whether or not guest sessions are supported.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.hide\_users\_hint : <code>boolean</code>
 Whether or not user accounts should be hidden.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.hostname : <code>string</code>
 The system's hostname.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.in\_authentication : <code>boolean</code>
 Whether or not the greeter is in the process of authenticating.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.is\_authenticated : <code>boolean</code>
 Whether or not the greeter has successfully authenticated.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.language : [<code>Language</code>](Language.html) \| <code>null</code>
 The current language or "null" if no language.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.languages : [<code>Array.&lt;Language&gt;</code>](Language.html)
 A list of languages to present to the user.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.layout : [<code>Layout</code>](Layout.html)
 The currently active layout for the selected user.
 
+<ReadOnly :readOnly="false" />
 
 ## lightdm.layouts : [<code>Array.&lt;Layout&gt;</code>](Layout.html)
 A list of keyboard layouts to present to the user.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.lock\_hint : <code>boolean</code>
 Whether or not the greeter was started as a lock screen.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.remote\_sessions : [<code>Array.&lt;Session&gt;</code>](Session.html)
 A list of remote sessions.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.select\_guest\_hint : <code>boolean</code>
 Whether or not the guest account should be selected by default.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.select\_user\_hint : <code>string</code> \| <code>undefined</code>
 The username to select by default.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.sessions : [<code>Array.&lt;Session&gt;</code>](Session.html)
 List of available sessions.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.show\_manual\_login\_hint : <code>boolean</code>
 Check if a manual login option should be shown. If "true", the theme should
 provide a way for a username to be entered manually. Otherwise, themes that show
 a user list may limit logins to only those users.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.show\_remote\_login\_hint : <code>boolean</code>
 Check if a remote login option should be shown. If "true", the theme should provide
 a way for a user to log into a remote desktop server.
 
-**Read only**: true
-**Internal**:   
+<ReadOnly />
+
+<Internal />
 
 ## lightdm.users : [<code>Array.&lt;User&gt;</code>](User.html)
 List of available users.
 
-**Read only**: true
+<ReadOnly />
 
 ## lightdm.authentication\_complete : [<code>Signal</code>](Signal.html)
 Gets emitted when the greeter has completed authentication.
@@ -221,7 +224,7 @@ Starts the authentication procedure for the guest user.
 
 **Returns**: <code>boolean</code> - Whether it is successful or not  
 
-## ~~lightdm.brightnessSet(quantity)~~
+## lightdm.brightnessSet(quantity) <Deprecated />
 ***Deprecated***: Use [`brightness_set`](Greeter.html#lightdm-brightness-set)
 
 Set the brightness to quantity
@@ -257,7 +260,7 @@ Set the brightness to quantity
 </table>
 
 
-## ~~lightdm.brightnessIncrease(quantity)~~
+## lightdm.brightnessIncrease(quantity) <Deprecated />
 ***Deprecated***: Use [`brightness_increase`](Greeter.html#lightdm-brightness-increase)
 
 Increase the brightness by quantity
@@ -293,7 +296,7 @@ Increase the brightness by quantity
 </table>
 
 
-## ~~lightdm.brightnessDecrease(quantity)~~
+## lightdm.brightnessDecrease(quantity) <Deprecated />
 ***Deprecated***: Use [`brightness_decrease`](Greeter.html#lightdm-brightness-decrease)
 
 Decrease the brightness by quantity

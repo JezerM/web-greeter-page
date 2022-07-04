@@ -3,7 +3,7 @@ Provides various utility methods for use in greeter themes. The greeter will aut
 create an instance of this class when it starts. The instance can be accessed
 with the global variable: `theme_utils`
 
-## ~~theme_utils.bind\_this(context) ⇒ <code>object</code>~~
+## theme_utils.bind\_this(context) ⇒ <code>object</code> <Deprecated />
 ***Deprecated***: This method will be removed in future versions
 
 Binds `this` to class, `context`, for all of the class's methods.

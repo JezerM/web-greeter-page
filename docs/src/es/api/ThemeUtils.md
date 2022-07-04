@@ -3,7 +3,7 @@ Provee varias utilidades para su uso en los temas. El greeter creará
 automáticamente una instancia de esta clase cuando éste inicie. La instancia
 puede ser accedida con la variable global: `theme_utils`.
 
-## ~~theme_utils.bind\_this(context) ⇒ <code>object</code>~~
+## theme_utils.bind\_this(context) ⇒ <code>object</code> <Deprecated />
 ***Deprecado***: Este método será quitado en futuras versiones.
 
 Une `this` a la clase, o sea el `context`, para todos los métodos de la clase.
