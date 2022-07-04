@@ -43,8 +43,8 @@ export default defineUserConfig({
     ],
   ],
 
-  //base: "/web-greeter-page/docs/",
-  base: "/docs/",
+  base: "/web-greeter-page/docs/",
+  //base: "/docs/",
   dest: "../dist/docs/",
 
   locales: {
