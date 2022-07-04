@@ -76,7 +76,7 @@ export default defineUserConfig({
           {
             text: "Home",
             link: "https://jezerm.github.io/web-greeter-page/",
-            target: "__self",
+            target: "_self",
             rel: "prev",
           },
           {

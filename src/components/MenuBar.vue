@@ -82,6 +82,7 @@ export default defineComponent({
   width: -moz-available;
   width: -webkit-fill-available;
   width: fill-available;
+  height: 3.2rem;
   padding: 0px 4%;
 
   border-bottom-width: 1.5px;
