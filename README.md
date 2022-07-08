@@ -28,5 +28,6 @@ See [CONTRIBUTING](./CONTRIBUTING.md).
 - [Frost](https://gitlab.com/ihciM/lightdm-frost)
 - [Arch theme](https://github.com/guillaumeboehm/lightdm-web-greeter-theme-arch)
 - [Aether](https://github.com/JezerM/Aether)
+- [Neon](https://github.com/hertg/lightdm-neon)
 
 [web-greeter-themes]: https://github.com/JezerM/web-greeter-themes "Web Greeter Themes"
