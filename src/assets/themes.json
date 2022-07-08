@@ -101,5 +101,15 @@
       "imagePrimary": "https://github.com/JezerM/Aether/raw/screenshots/screenshot.png",
       "imageSecondary": ""
     }
+    ,
+    {
+      "name": "Neon",
+      "author": "hertg",
+      "repo": "https://github.com/hertg/lightdm-neon",
+      "description": "A customizable theme for web-greeter in a nostalgic but modern neon look",
+      "multiMonitor": false,
+      "imagePrimary": "https://github.com/hertg/lightdm-neon/raw/fe9e334a1e5475c07bc39406a875a06a748cdbc8/docs/password.jpg",
+      "imageSecondary": ""
+    }
   ]
 }
