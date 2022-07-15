@@ -34,7 +34,7 @@
       "author": "Litarvan (Adrien Navratil)",
       "repo": "https://github.com/Litarvan/lightdm-webkit-theme-litarvan",
       "description": "Litarvan's LightDM HTML theme.",
-      "multiMonitor": false,
+      "multiMonitor": true,
       "imagePrimary": "https://camo.githubusercontent.com/22468304adc58b48a69fcd4be49dd40fbbaac73c17bdf774e9dc6c3ab892e5b0/68747470733a2f2f6c6974617276616e2e6769746875622e696f2f6c69676874646d2d7765626b69742d7468656d652d6c6974617276616e2f73706c6173685f766965772e706e67",
       "imageSecondary": ""
     },
