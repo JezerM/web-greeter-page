@@ -82,6 +82,14 @@ export default defineComponent({
 }
 
 .webTechGradient {
+  background: rgb(236, 204, 156);
+  background: linear-gradient(
+    180deg,
+    rgba(236, 204, 156, 1) 0%,
+    rgba(208, 83, 83, 1) 100%
+  );
+}
+html.dark .webTechGradient {
   background: rgb(87, 55, 44);
   background: linear-gradient(
     0deg,
@@ -89,7 +97,16 @@ export default defineComponent({
     rgba(110, 82, 41, 1) 100%
   );
 }
+
 .apiGradient {
+  background: rgb(194, 156, 236);
+  background: linear-gradient(
+    180deg,
+    rgba(194, 156, 236, 1) 0%,
+    rgba(208, 83, 135, 1) 100%
+  );
+}
+html.dark .apiGradient {
   background: rgb(51, 46, 52);
   background: linear-gradient(
     0deg,
@@ -97,7 +114,16 @@ export default defineComponent({
     rgba(92, 52, 80, 1) 100%
   );
 }
+
 .batteryGradient {
+  background: rgb(200, 237, 181);
+  background: linear-gradient(
+    180deg,
+    rgba(200, 237, 181, 1) 0%,
+    rgba(112, 207, 178, 1) 100%
+  );
+}
+html.dark .batteryGradient {
   background: rgb(58, 66, 58);
   background: linear-gradient(
     0deg,
@@ -105,7 +131,16 @@ export default defineComponent({
     rgba(32, 48, 38, 1) 100%
   );
 }
+
 .multiMonGradient {
+  background: rgb(247, 230, 242);
+  background: linear-gradient(
+    180deg,
+    rgba(247, 230, 242, 1) 0%,
+    rgba(130, 112, 207, 1) 100%
+  );
+}
+html.dark .multiMonGradient {
   background: rgb(62, 58, 66);
   background: linear-gradient(
     0deg,
