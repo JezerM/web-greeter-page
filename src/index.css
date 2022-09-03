@@ -2,9 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  /* brand colors */
+  --c-brand: #3eaf7c;
+  --c-brand-light: #4abf8a;
+
+  /* background colors */
+  --c-bg: #ffffff;
+  --c-bg-light: #f3f4f5;
+  --c-bg-lighter: #eeeeee;
+  --c-bg-navbar: var(--c-bg);
+  --c-bg-sidebar: var(--c-bg);
+  --c-bg-arrow: #cccccc;
+
+  /* text colors */
+  --c-text: #2c3e50;
+  --c-text-accent: var(--c-brand);
+  --c-text-light: #3a5169;
+  --c-text-lighter: #4e6e8e;
+  --c-text-lightest: #6a8bad;
+
+  /* border colors */
+  --c-border: #eaecef;
+  --c-border-dark: #dfe2e5;
+
+  background-color: var(--c-bg);
+}
+
+html.dark {
+  /* brand colors */
+  --c-brand: #5580ff;
+  --c-brand-light: #8cbce5;
+
+  /* background colors */
+  --c-bg: #1a1a1a;
+  --c-bg-light: #2b313a;
+  --c-bg-lighter: #262c34;
+
+  /* text colors */
+  --c-text: #ffffff;
+  --c-text-light: #a6b1ba;
+  --c-text-lighter: #90a2b2;
+  --c-text-lightest: #8094a8;
+
+  /* border colors */
+  --c-border: #595959;
+  --c-border-dark: #464e55;
+}
+
 .button {
-  background-color: #333333;
-  color: #cccccc;
+  background-color: var(--c-bg-light);
+  color: var(--c-text-light);
   font-weight: 500;
   text-decoration: none;
 
@@ -15,16 +63,25 @@
 
   transition: background-color 0.25s;
 }
-.button:hover {
-  background-color: #444444;
-  color: #8cbce5;
-}
+.button:hover,
 .button:focus {
-  background-color: #444444;
-  color: #8cbce5;
+  background-color: var(--c-bg-lighter);
+  color: var(--c-brand);
 }
 
 .greenGradient {
+  background: rgb(127, 153, 230);
+  background: linear-gradient(
+    90deg,
+    rgba(127, 153, 230, 1) 0%,
+    rgba(143, 201, 205, 1) 35%,
+    rgba(140, 179, 99, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+html.dark .greenGradient {
   background: rgb(156, 180, 255);
   background: linear-gradient(
     90deg,
@@ -55,13 +112,13 @@ h3 {
 h4 {
   font-size: 18px;
   font-weight: 700;
-  color: hsl(0, 0%, 80%);
+  color: var(--c-text-light);
   margin-bottom: 10px;
 }
 h5 {
   font-size: 16px;
   font-weight: 700;
-  color: hsl(0, 0%, 80%);
+  color: var(--c-text-light);
   margin-bottom: 10px;
 }
 
