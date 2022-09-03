@@ -1,21 +1,32 @@
 <template>
-  <div id="menuBar">
-    <router-link id="titleWrapper" to="/web-greeter-page/">
+  <header id="menuBar">
+    <router-link id="titleWrapper" to="/">
       <h3>{{ title }}</h3>
     </router-link>
     <div id="menuBarLinks">
-      <router-link to="/web-greeter-page/themes">Themes</router-link>
-      <a href="/web-greeter-page/docs">Docs</a>
+      <router-link to="/web-greeter-page/" class="menuBarItem">
+        Home
+      </router-link>
+      <router-link to="/web-greeter-page/themes" class="menuBarItem">
+        Themes
+      </router-link>
+      <a href="/web-greeter-page/docs" class="menuBarItem">Docs</a>
+
+      <ToggleColorMode />
     </div>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import ToggleColorMode from "./ToggleColorMode.vue";
 
 let timeout: number;
 
 export default defineComponent({
+  components: {
+    ToggleColorMode,
+  },
   data() {
     return {
       index: 0,
@@ -77,16 +88,16 @@ export default defineComponent({
   align-items: center;
   justify-content: space-between;
 
-  background-color: #1a1a1a;
-  color: #fff;
+  background-color: var(--c-bg);
+  color: var(--c-text);
   width: -moz-available;
   width: -webkit-fill-available;
   width: fill-available;
-  height: 3.2rem;
-  padding: 0px 4%;
+  height: 3.6rem;
+  padding: 0.7rem 1.5rem;
 
-  border-bottom-width: 1.5px;
-  border-bottom-color: #595959;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--c-border);
   border-bottom-style: solid;
 }
 #menuBar h3 {
@@ -96,7 +107,7 @@ export default defineComponent({
   transition: 0.25s;
 }
 #menuBar h3:hover {
-  color: #8cbce5;
+  color: var(--c-brand);
 }
 #menuBar #titleWrapper {
   width: fit-content;
@@ -105,24 +116,30 @@ export default defineComponent({
   display: flex;
   position: relative;
 
+  font-size: 0.9rem;
+  font-weight: 500;
+
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-#menuBarLinks a {
-  margin: 0px 5px;
+#menuBarLinks .menuBarItem {
+  margin: 0em;
+  margin-left: 1.5rem;
   text-decoration: none;
-  color: #fff;
-  padding: 10px;
+  color: var(--c-text);
+  padding: 0em;
   transition: 0.25s;
+  border-bottom: solid 2px transparent;
+  margin-bottom: -2px;
+  line-height: 1.4rem;
 }
-#menuBarLinks a:hover {
-  background-color: #303030;
-  color: #8cbce5;
+#menuBarLinks .menuBarItem:first-child {
+  margin-left: 0em;
 }
-#menuBarLinks a:focus {
-  background-color: #303030;
-  color: #8cbce5;
+#menuBarLinks .menuBarItem:hover,
+#menuBarLinks .menuBarItem:focus {
+  border-bottom: solid 1.5px var(--c-brand);
   outline: 0;
 }
 
@@ -147,12 +164,6 @@ export default defineComponent({
   }
   to {
     width: 0%;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  #menuBar {
-    padding: 0px 10%;
   }
 }
 
