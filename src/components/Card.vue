@@ -29,7 +29,7 @@ export default defineComponent({
   justify-content: space-between;
   gap: 12px;
 
-  background-color: #333333;
+  background-color: var(--c-bg-lighter);
   border-radius: 25px;
   box-sizing: border-box;
   overflow: hidden;

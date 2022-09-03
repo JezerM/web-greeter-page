@@ -28,14 +28,11 @@ export default defineComponent({
 </script>
 
 <style>
-html {
-  background-color: #1a1a1a;
-}
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #fff;
+  color: var(--c-text);
   margin: 60px 0px 10px 0px;
 }
 

@@ -157,12 +157,10 @@ export default defineComponent({
 }
 
 .buttonRepo {
-  background-color: #444444;
+  background-color: var(--c-bg-light);
 }
-.button:hover {
-  background-color: #555555;
-}
-.button:focus {
-  background-color: #555555;
+.buttonRepo:hover,
+.buttonRepo:focus {
+  background-color: var(--c-bg);
 }
 </style>
