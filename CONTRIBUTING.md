@@ -14,7 +14,7 @@ To create a Pull Request, you need to add the LightDM theme information in the `
       "author": "GitHub username (GitHub realname)", // e.g: "jezerm (Jezer Mejía)".
       "repo": "https://github.com/username/theme",
       "description": "A simple description of the theme.",
-      "multiMonitor": false, // If the theme contains a `index.yml` that allows the multi-monitor support in Nody Greeter.
+      "multiMonitor": false, // If the theme contains a `index.yml` that allows the multi-monitor support in the greeters.
       "imagePrimary": "url/to/image",
       "imageSecondary": "url/to/image", // This can be optional
     }
@@ -42,7 +42,7 @@ If not maintained but you found a fork that does work, include the URL of the wo
 
 #### Multi-monitor support
 
-The multi-monitor support is only available in Nody Greeter at the moment.
+The multi-monitor support is available in web-greeter and nody-greeter. Sea-greeter, still in development, does not support a full multi-monitor setup yet.
 
 If the theme provides a `index.yml` file, check that it does actually have a `secondary_html` property, like the following:
 
