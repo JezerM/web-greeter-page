@@ -1,6 +1,6 @@
 <template>
   <header id="menuBar">
-    <router-link id="titleWrapper" to="/">
+    <router-link id="titleWrapper" to="/web-greeter-page/">
       <h3>{{ title }}</h3>
     </router-link>
     <div id="menuBarLinks">
