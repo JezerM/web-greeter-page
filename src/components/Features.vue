@@ -85,8 +85,8 @@ export default defineComponent({
   background: rgb(236, 204, 156);
   background: linear-gradient(
     180deg,
-    rgba(236, 204, 156, 1) 0%,
-    rgba(208, 83, 83, 1) 100%
+    rgba(236, 204, 166, 1) 0%,
+    rgba(208, 123, 123, 1) 100%
   );
 }
 html.dark .webTechGradient {
@@ -99,11 +99,11 @@ html.dark .webTechGradient {
 }
 
 .apiGradient {
-  background: rgb(194, 156, 236);
+  background: rgb(210, 183, 240);
   background: linear-gradient(
     180deg,
-    rgba(194, 156, 236, 1) 0%,
-    rgba(208, 83, 135, 1) 100%
+    rgba(210, 183, 240, 1) 0%,
+    rgb(228, 145, 180, 1) 100%
   );
 }
 html.dark .apiGradient {
