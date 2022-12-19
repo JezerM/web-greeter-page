@@ -1722,15 +1722,15 @@
     "/web-greeter-page/assets/Inter.var.85f08b5f.woff2"
   ],
   "src/assets/themes.json": [
-    "/web-greeter-page/assets/Themes.0a4e219a.js",
+    "/web-greeter-page/assets/Themes.5b593f1f.js",
     "/web-greeter-page/assets/Themes.4382f6e4.css"
   ],
   "src/views/Themes.vue?vue&type=style&index=0&lang.css": [
-    "/web-greeter-page/assets/Themes.0a4e219a.js",
+    "/web-greeter-page/assets/Themes.5b593f1f.js",
     "/web-greeter-page/assets/Themes.4382f6e4.css"
   ],
   "src/views/Themes.vue": [
-    "/web-greeter-page/assets/Themes.0a4e219a.js",
+    "/web-greeter-page/assets/Themes.5b593f1f.js",
     "/web-greeter-page/assets/Themes.4382f6e4.css"
   ]
 }
