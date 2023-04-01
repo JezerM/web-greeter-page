@@ -117,7 +117,7 @@
       "description": "Modern lightdm webkit2 theme focused on the appearance",
       "multiMonitor": true,
       "imagePrimary": "https://raw.githubusercontent.com/TheWisker/Shikai/1fe9a2cb4a157f898b4b25431321e337ca2a26cf/assets/Screenshot_One.png",
-      "imageSecondary": "https://raw.githubusercontent.com/TheWisker/Shikai/1fe9a2cb4a157f898b4b25431321e337ca2a26cf/assets/Screenshot_Five.png"
+      "imageSecondary": ""
     }
   ]
 }
