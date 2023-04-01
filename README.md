@@ -29,5 +29,6 @@ See [CONTRIBUTING](./CONTRIBUTING.md).
 - [Arch theme](https://github.com/guillaumeboehm/lightdm-web-greeter-theme-arch)
 - [Aether](https://github.com/JezerM/Aether)
 - [Neon](https://github.com/hertg/lightdm-neon)
+- [Shikai](https://github.com/TheWisker/Shikai)
 
 [web-greeter-themes]: https://github.com/JezerM/web-greeter-themes "Web Greeter Themes"

@@ -109,6 +109,15 @@
       "multiMonitor": false,
       "imagePrimary": "https://github.com/hertg/lightdm-neon/raw/fe9e334a1e5475c07bc39406a875a06a748cdbc8/docs/password.jpg",
       "imageSecondary": ""
+    },
+    {
+      "name": "Shikai",
+      "author": "TheWisker (Wisker)",
+      "repo": "https://github.com/TheWisker/Shikai",
+      "description": "Modern lightdm webkit2 theme focused on the appearance",
+      "multiMonitor": true,
+      "imagePrimary": "https://raw.githubusercontent.com/TheWisker/Shikai/1fe9a2cb4a157f898b4b25431321e337ca2a26cf/assets/Screenshot_One.png",
+      "imageSecondary": "https://raw.githubusercontent.com/TheWisker/Shikai/1fe9a2cb4a157f898b4b25431321e337ca2a26cf/assets/Screenshot_Five.png"
     }
   ]
 }
