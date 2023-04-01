@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2c8859f0","path":"/api/LightDM.html","title":"LightDM","lang":"en-US","frontmatter":{},"excerpt":"","headers":[],"git":{"contributors":[{"name":"Jezer Mej\xEDa","email":"59768785+JezerM@users.noreply.github.com","commits":1}]},"filePathRelative":"api/LightDM.md"}');export{e as data};
