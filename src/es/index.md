@@ -19,20 +19,11 @@ hero:
 
 features:
   - title: Crea temas con tecnologías web
-    details: Use HTML, CSS and JavaScript to create simple, or very complex, themes, which should work seamlessly between all of our greeters.
+    details: Usa HTML, CSS y JavaScript para crear temas simples, o muy complejos, que funcionan en todos nuestros greeters.
   - title: API simple y poderosa
     details:
-        Use LightDM API in a simple way through JavaScript.
-        Also, make use of more utils that allows to access the config and filesystem while being secure.
+        Usa la API de LightDM de manera sencilla con JavaScript.
+        Además, puedes usar otras utilidades para cceder a la configuración y al sistema de archivos con total seguridad.
   - title: Control de Batería y Brillo
-    details: Listen to the changes.<br/>Get and set the properties.
+    details: Escucha los cambios.<br/>Obtén y define las propiedades.
 ---
-
-## Getting Started
-
-You can get started using VitePress right away using `npx`!
-
-```sh
-npm init
-npx vitepress init
-```

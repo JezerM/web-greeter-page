@@ -27,12 +27,3 @@ features:
   - title: Battery and Brightness control
     details: Listen to the changes.<br/>Get and set the properties.
 ---
-
-## Getting Started
-
-You can get started using VitePress right away using `npx`!
-
-```sh
-npm init
-npx vitepress init
-```
