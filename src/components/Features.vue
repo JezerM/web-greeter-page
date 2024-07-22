@@ -3,44 +3,44 @@
     <h2 class="mb-6">Features</h2>
 
     <CardContainer>
-      <Card class="col-span-12 row-span-2 md:col-span-7 webTechGradient">
-        <template #header>
-          <h3>Create themes with web technologies</h3>
-          <p>
-            Use HTML, CSS and JavaScript to create simple, or very complex,
-            themes, which should work seamlessly between all of our greeters.
-          </p>
-        </template>
+      <Card
+        class="col-span-12 row-span-2 md:col-span-7 webTechGradient p-8 text-left"
+      >
+        <h3>Create themes with web technologies</h3>
+        <p>
+          Use HTML, CSS and JavaScript to create simple, or very complex,
+          themes, which should work seamlessly between all of our greeters.
+        </p>
       </Card>
 
-      <Card class="col-span-12 md:col-span-5 apiGradient">
-        <template #header>
-          <h3>Simple and powerful API</h3>
-          <p>
-            Use LightDM API in a simple way through JavaScript.<br />
-            Also, make use of more utils that allows to access the config and
-            filesystem while being secure.
-          </p>
-        </template>
+      <Card class="col-span-12 md:col-span-5 apiGradient p-8 text-left">
+        <h3>Simple and powerful API</h3>
+        <p>
+          Use LightDM API in a simple way through JavaScript.<br />
+          Also, make use of more utils that allows to access the config and
+          filesystem while being secure.
+        </p>
       </Card>
 
-      <Card class="col-span-12 md:col-span-5 batteryGradient">
-        <template #header>
-          <h3>Battery and Brightness control</h3>
-          <p>
-            Listen to the changes.<br />
-            Get and set the properties.
-          </p>
-        </template>
+      <Card class="col-span-12 md:col-span-5 batteryGradient p-8 text-left">
+        <h3>Battery and Brightness control</h3>
+        <p>
+          Listen to the changes.<br />
+          Get and set the properties.
+        </p>
       </Card>
 
-      <Card class="col-span-12 flex-col md:!flex-row multiMonGradient">
+      <Card
+        class="col-span-12 flex-col md:!flex-row multiMonGradient text-left"
+      >
         <template #header>
-          <h3>Multi-monitor support</h3>
-          <p>
-            Use a multi-monitor setup with multiple windows that can communicate
-            with each other instantly.
-          </p>
+          <div class="p-8">
+            <h3>Multi-monitor support</h3>
+            <p>
+              Use a multi-monitor setup with multiple windows that can
+              communicate with each other instantly.
+            </p>
+          </div>
         </template>
         <LazyImg
           class="self-end"

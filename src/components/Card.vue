@@ -1,11 +1,11 @@
 <template>
-  <div class="card">
-    <header id="card-header" class="p-8 text-left">
+  <div class="card flex flex-col gap-0 rounded-xl relative overflow-hidden">
+    <header id="card-header">
       <slot name="header"></slot>
     </header>
-    <header id="card-content" class="flex">
+    <div id="card-content">
       <slot></slot>
-    </header>
+    </div>
   </div>
 </template>
 
@@ -22,22 +22,7 @@ export default defineComponent({
 
 <style scoped>
 .card {
-  display: flex;
-  position: relative;
-
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 12px;
-
   background-color: var(--c-bg-lighter);
-  border-radius: 25px;
   box-sizing: border-box;
-  overflow: hidden;
-}
-</style>
-
-<style>
-#card-header h3 {
-  margin: 0;
 }
 </style>

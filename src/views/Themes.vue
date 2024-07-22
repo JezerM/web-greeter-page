@@ -14,6 +14,10 @@
           :key="theme.name"
         >
           <template #header>
+            <CardImage :theme="theme" />
+          </template>
+
+          <div class="p-8 text-left">
             <h3>{{ theme.name }}</h3>
             <h5>{{ theme.author }}</h5>
             <h5 v-if="theme.multiMonitor == true">Multi monitor support</h5>
@@ -26,28 +30,6 @@
               title="Visit theme's repository"
               >{{ getRepoHost(theme.repo) }}</a
             >
-          </template>
-
-          <div
-            class="grid pl-6 grid-rows-6 grid-cols-6 box-border"
-            v-if="theme.imageSecondary"
-          >
-            <img
-              class="col-start-1 col-end-5 row-start-1 row-end-5 drop-shadow-2xl"
-              :src="getImageUrl(theme.imageSecondary)"
-              :alt="theme.name + ' Secondary image'"
-            />
-            <img
-              class="col-start-2 col-end-7 row-start-2 row-end-7 drop-shadow-2xl"
-              :src="getImageUrl(theme.imagePrimary)"
-              :alt="theme.name + ' Primary image'"
-            />
-          </div>
-          <div v-else>
-            <img
-              :src="getImageUrl(theme.imagePrimary)"
-              :alt="theme.name + ' image'"
-            />
           </div>
         </Card>
       </CardContainer>
@@ -63,6 +45,10 @@
           :key="theme.name"
         >
           <template #header>
+            <CardImage :theme="theme" />
+          </template>
+
+          <div class="p-8 text-left">
             <h3>{{ theme.name }}</h3>
             <h5>{{ theme.author }}</h5>
             <h5 v-if="theme.multiMonitor == true">Multi monitor support</h5>
@@ -75,28 +61,6 @@
               title="Visit theme's repository"
               >{{ getRepoHost(theme.repo) }}</a
             >
-          </template>
-
-          <div
-            class="grid pl-6 grid-rows-6 grid-cols-6 box-border"
-            v-if="theme.imageSecondary"
-          >
-            <img
-              class="col-start-1 col-end-5 row-start-1 row-end-5 drop-shadow-2xl"
-              :src="getImageUrl(theme.imageSecondary)"
-              :alt="theme.name + ' Secondary image'"
-            />
-            <img
-              class="col-start-2 col-end-7 row-start-2 row-end-7 drop-shadow-2xl"
-              :src="getImageUrl(theme.imagePrimary)"
-              :alt="theme.name + ' Primary image'"
-            />
-          </div>
-          <div class="pt-4" v-else>
-            <img
-              :src="getImageUrl(theme.imagePrimary)"
-              :alt="theme.name + ' image'"
-            />
           </div>
         </Card>
       </CardContainer>
@@ -107,12 +71,14 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import CardContainer from "@/components/CardContainer.vue";
+import CardImage from "@/components/CardImage.vue";
 import Card from "@/components/Card.vue";
 import Themes from "@/assets/themes.json";
 
 export default defineComponent({
   components: {
     CardContainer,
+    CardImage,
     Card,
   },
   data() {

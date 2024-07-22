@@ -1,7 +1,7 @@
 <template>
   <section id="projectsSection">
     <CardContainer>
-      <Card class="col-span-12 md:col-span-4">
+      <Card class="col-span-12 md:col-span-4 p-8">
         <template #header>
           <img
             class="projectIcon"
@@ -27,7 +27,7 @@
         </template>
       </Card>
 
-      <Card class="col-span-12 md:col-span-4">
+      <Card class="col-span-12 md:col-span-4 p-8">
         <template #header>
           <img
             class="projectIcon"
@@ -52,7 +52,7 @@
         </template>
       </Card>
 
-      <Card class="col-span-12 md:col-span-4">
+      <Card class="col-span-12 md:col-span-4 p-8">
         <template #header>
           <img
             class="projectIcon"
