@@ -4,6 +4,14 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Web Greeter",
   description: "A Web Based Greeter For LightDM",
+  cleanUrls: true,
+  lastUpdated: true,
+
+  vite: {
+    resolve: {
+      preserveSymlinks: true,
+    },
+  },
 
   locales: {
     root: {
@@ -19,6 +27,10 @@ export default defineConfig({
         darkModeSwitchLabel: "Apariencia",
         outlineTitle: "En esta página",
         returnToTopLabel: "Volver arriba",
+        lastUpdated: {
+          text: "Última actualización",
+        },
+
         docFooter: {
           next: "Página siguiente",
           prev: "Página anterior",
