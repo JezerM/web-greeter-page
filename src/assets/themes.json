@@ -35,7 +35,7 @@
       "repo": "https://github.com/Litarvan/lightdm-webkit-theme-litarvan",
       "description": "Litarvan's LightDM HTML theme.",
       "multiMonitor": true,
-      "imagePrimary": "https://camo.githubusercontent.com/22468304adc58b48a69fcd4be49dd40fbbaac73c17bdf774e9dc6c3ab892e5b0/68747470733a2f2f6c6974617276616e2e6769746875622e696f2f6c69676874646d2d7765626b69742d7468656d652d6c6974617276616e2f73706c6173685f766965772e706e67",
+      "imagePrimary": "https://litarvan.github.io/lightdm-webkit-theme-litarvan/splash_view.png",
       "imageSecondary": ""
     },
     {
@@ -117,6 +117,15 @@
       "description": "Modern lightdm webkit2 theme focused on the appearance",
       "multiMonitor": true,
       "imagePrimary": "https://raw.githubusercontent.com/TheWisker/Shikai/1fe9a2cb4a157f898b4b25431321e337ca2a26cf/assets/Screenshot_One.png",
+      "imageSecondary": ""
+    },
+    {
+      "name": "SlateGreet",
+      "author": "KernelGhost (Rohan Barar)",
+      "repo": "https://github.com/KernelGhost/SlateGreet",
+      "description": "A minimalistic greeter based on lightdm-gab-nord",
+      "multiMonitor": false,
+      "imagePrimary": "https://raw.githubusercontent.com/KernelGhost/SlateGreet/master/static/Screenshot.png",
       "imageSecondary": ""
     }
   ]
