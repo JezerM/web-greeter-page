@@ -30,5 +30,6 @@ See [CONTRIBUTING](./CONTRIBUTING.md).
 - [Aether](https://github.com/JezerM/Aether)
 - [Neon](https://github.com/hertg/lightdm-neon)
 - [Shikai](https://github.com/TheWisker/Shikai)
+- [SlateGreet](https://github.com/KernelGhost/SlateGreet)
 
 [web-greeter-themes]: https://github.com/JezerM/web-greeter-themes "Web Greeter Themes"
