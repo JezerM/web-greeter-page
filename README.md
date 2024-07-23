@@ -1,5 +1,38 @@
-# Vue 3 + TypeScript + Vite
+# Web Greeter
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This repository aims to create a web page for the purpose of presenting my
+web-based greeters, such as web-greeter and nody-greeter.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Also, this could be considered as a replacement of
+[JezerM/web-greeter-themes][web-greeter-themes], as this project would contain
+the default and community themes.
+
+If you want to add a new theme, make an issue or a PR :D
+
+See [CONTRIBUTING](./CONTRIBUTING.md).
+
+## List of themes
+
+### Default themes
+
+- Gruvbox (default)
+- Dracula (default)
+
+### Community themes
+
+- [Glorious](https://github.com/manilarome/lightdm-webkit2-theme-glorious)
+- [Litarvan](https://github.com/Litarvan/lightdm-webkit-theme-litarvan)
+- [WelcomeXP](https://github.com/mshernandez5/WelcomeXP)
+- [Void theme](https://github.com/JezerM/lightdm-void-theme)
+- [Luminosity](https://github.com/rda0/web-greeter-theme-luminosity)
+- [Gab Gradient](https://github.com/GabrielTenma/lightdm-gab-gradient)
+- [Frost](https://gitlab.com/ihciM/lightdm-frost)
+- [Arch theme](https://github.com/guillaumeboehm/lightdm-web-greeter-theme-arch)
+- [Aether](https://github.com/JezerM/Aether)
+- [Neon](https://github.com/hertg/lightdm-neon)
+- [Shikai](https://github.com/TheWisker/Shikai)
+- [SlateGreet](https://github.com/KernelGhost/SlateGreet)
+
+[web-greeter-themes]:
+  https://github.com/JezerM/web-greeter-themes
+  "Web Greeter Themes"
