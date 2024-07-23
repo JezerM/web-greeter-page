@@ -77,7 +77,7 @@ export default defineConfig({
           { text: "Inicio", link: "/es" },
           { text: "Temas", link: "/themes" },
           { text: "Guía", link: "/es/docs/guide" },
-          { text: "API", link: "/es/docs/api" },
+          { text: "API", link: "/docs/api" }, // TODO: Add Spanish translation for API
         ],
 
         sidebar: {
