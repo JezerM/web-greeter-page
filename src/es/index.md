@@ -19,11 +19,14 @@ hero:
 
 features:
   - title: Crea temas con tecnologías web
-    details: Usa HTML, CSS y JavaScript para crear temas simples, o muy complejos, que funcionan en todos nuestros greeters.
+    details:
+      Usa HTML, CSS y JavaScript para crear temas simples, o muy complejos, que
+      funcionan en todos nuestros greeters.
   - title: API simple y poderosa
     details:
-        Usa la API de LightDM de manera sencilla con JavaScript.
-        Además, puedes usar otras utilidades para cceder a la configuración y al sistema de archivos con total seguridad.
+      Usa la API de LightDM de manera sencilla con JavaScript. Además, puedes
+      usar otras utilidades para cceder a la configuración y al sistema de
+      archivos con total seguridad.
   - title: Control de Batería y Brillo
     details: Escucha los cambios.<br/>Obtén y define las propiedades.
 ---
