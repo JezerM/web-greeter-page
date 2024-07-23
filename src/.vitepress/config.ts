@@ -45,7 +45,7 @@ export default defineConfig({
 
         nav: [
           { text: "Inicio", link: "/es" },
-          { text: "Temas", link: "/es/themes" },
+          { text: "Temas", link: "/themes" },
           { text: "Guía", link: "/es/docs/guide" },
           { text: "API", link: "/es/docs/api" },
         ],
