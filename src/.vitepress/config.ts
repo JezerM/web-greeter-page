@@ -35,6 +35,7 @@ export default defineConfig({
   description: "A Web Based Greeter For LightDM",
   cleanUrls: true,
   lastUpdated: true,
+  outDir: "../dist",
 
   vite: {
     resolve: {
