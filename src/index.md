@@ -24,6 +24,6 @@ features:
     details:
         Use LightDM API in a simple way through JavaScript.
         Also, make use of more utils that allows to access the config and filesystem while being secure.
-  - title: Battery and Brightness control
-    details: Listen to the changes.<br/>Get and set the properties.
+  - title: Multi-monitor support
+    details: Use a multi-monitor setup with multiple windows that can communicate with each other instantly.
 ---
