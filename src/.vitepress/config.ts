@@ -119,6 +119,32 @@ export default defineConfig({
       { text: "API", link: "/docs/api" },
     ],
 
+    search: {
+      provider: "local",
+      options: {
+        locales: {
+          es: {
+            translations: {
+              button: {
+                buttonText: "Buscar",
+                buttonAriaLabel: "Buscar",
+              },
+              modal: {
+                noResultsText: "No hay resultados para",
+                footer: {
+                  closeText: "Cerrar",
+                  closeKeyAriaLabel: "Cerrar",
+                  selectText: "Seleccionar",
+                  selectKeyAriaLabel: "Seleccionar",
+                  navigateText: "Navegar",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+
     sidebar: {
       "/docs/guide": [
         {
