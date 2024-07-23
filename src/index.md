@@ -6,6 +6,8 @@ hero:
   name: "Web Greeter"
   text: "A Web Based Greeter For LightDM"
   tagline: Wonderful themes in your Login Manager
+  image:
+    src: /icons/web-greeter-icon.png
   actions:
     - theme: brand
       text: Documentation

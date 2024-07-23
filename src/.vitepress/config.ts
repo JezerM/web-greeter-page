@@ -119,6 +119,10 @@ export default defineConfig({
       { text: "API", link: "/docs/api" },
     ],
 
+    logo: {
+      src: "/icons/web-greeter-icon-transparent.png",
+    },
+
     search: {
       provider: "local",
       options: {

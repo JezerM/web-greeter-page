@@ -4,8 +4,10 @@ layout: home
 
 hero:
   name: "Web Greeter"
-  text: "Un greeter web para LightDM"
+  text: "Un Greeter Web Para LightDM"
   tagline: Temas hermosos para tu Inicio de Sesión
+  image:
+    src: /icons/web-greeter-icon.png
   actions:
     - theme: brand
       text: Documentación
