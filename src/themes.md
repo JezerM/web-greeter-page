@@ -100,4 +100,11 @@ community:
     description: A minimalistic greeter based on lightdm-gab-nord
     multiMonitor: false
     image: https://raw.githubusercontent.com/KernelGhost/SlateGreet/master/static/Screenshot.png
+
+  - name: OSRS
+    author: ndugdale
+    repo: https://github.com/ndugdale/osrs-web-greeter-theme
+    description: An Old School RuneScape themed login screen for LightDM using Web Greeter or Nody Greeter
+    multiMonitor: false
+    image: https://raw.githubusercontent.com/ndugdale/osrs-web-greeter-theme/main/docs/images/login-main.png
 ---

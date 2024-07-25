@@ -32,6 +32,7 @@ See [CONTRIBUTING](./CONTRIBUTING.md).
 - [Neon](https://github.com/hertg/lightdm-neon)
 - [Shikai](https://github.com/TheWisker/Shikai)
 - [SlateGreet](https://github.com/KernelGhost/SlateGreet)
+- [OSRS](https://github.com/ndugdale/osrs-web-greeter-theme)
 
 [web-greeter-themes]:
   https://github.com/JezerM/web-greeter-themes
