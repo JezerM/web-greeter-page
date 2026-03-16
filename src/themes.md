@@ -107,4 +107,12 @@ community:
     description: An Old School RuneScape themed login screen for LightDM using Web Greeter or Nody Greeter
     multiMonitor: false
     image: https://raw.githubusercontent.com/ndugdale/osrs-web-greeter-theme/main/docs/images/login-main.png
+
+
+  - name: Waifu Greeter
+    author: anime-kun32
+    repo: https://github.com/anime-kun32/waifu-greeter
+    description: A sexy Login UI made for lightdm.Made with html tailwind and js 
+    multiMonitor: false 
+    image: https://raw.githubusercontent.com/anime-kun32/waifu-greeter/refs/heads/main/readme/1.png
 ---
