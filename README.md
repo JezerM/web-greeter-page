@@ -33,6 +33,7 @@ See [CONTRIBUTING](./CONTRIBUTING.md).
 - [Shikai](https://github.com/TheWisker/Shikai)
 - [SlateGreet](https://github.com/KernelGhost/SlateGreet)
 - [OSRS](https://github.com/ndugdale/osrs-web-greeter-theme)
+- [F7200](https://github.com/WilliamSease/F7200)
 
 [web-greeter-themes]:
   https://github.com/JezerM/web-greeter-themes

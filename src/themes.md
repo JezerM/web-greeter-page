@@ -115,4 +115,11 @@ community:
     description: A sexy Login UI made for lightdm.Made with html tailwind and js 
     multiMonitor: false 
     image: https://raw.githubusercontent.com/anime-kun32/waifu-greeter/refs/heads/main/readme/1.png
+
+  - name: F7200
+    author: williamsease
+    repo: https://github.com/WilliamSease/F7200
+    description: A sparse and visually alien web-greeter theme based on the works of The Designer's Republic and their WipEout series of video games.
+    multiMonitor: false
+    image: https://raw.githubusercontent.com/WilliamSease/F7200/main/screenshots/screen1.png
 ---
